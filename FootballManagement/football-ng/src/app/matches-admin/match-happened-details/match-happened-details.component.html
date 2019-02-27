@@ -1,0 +1,108 @@
+<div class="content-wrapper">
+  <section class="content">
+    <div class="box-body">
+      <h3 class="box-title">Add Actions in the Match</h3>
+      <div class="row" style="margin-top: 20px;">
+        <div class="col-md-12">
+          <div class="box">
+            <div class="search-div">
+              <button mat-raised-button (click)="onCreate()" >
+                <mat-icon><i class="fa fa-plus"></i></mat-icon>Create
+              </button>
+              <mat-form-field class="search-form-field" floatLabel="never">
+                <input matInput [(ngModel)]="searchKey" placeholder="Search" autocomplete="off" (keyup)="applyFilter()">
+                <button mat-button matSuffix mat-icon-button (click)="onSearchClear()" >
+                  <mat-icon>clear</mat-icon>
+                </button>
+              </mat-form-field>
+            </div>
+            <div class="mat-elevation-z8">
+
+              <mat-table [dataSource]="listMatchDetails" matSort>
+                <ng-container matColumnDef="action_time">
+                  <mat-header-cell *matHeaderCellDef  mat-sort-header>Time</mat-header-cell>
+                  <mat-cell *matCellDef="let element">{{element.action_time}}'</mat-cell>
+                </ng-container>
+                <ng-container matColumnDef="teamName">
+                  <mat-header-cell *matHeaderCellDef >Team Name</mat-header-cell>
+                  <mat-cell *matCellDef="let element">{{element.teamName}}</mat-cell>
+                </ng-container>
+                <ng-container matColumnDef="playerName">
+                  <mat-header-cell *matHeaderCellDef  mat-sort-header >Player Name</mat-header-cell>
+                  <mat-cell *matCellDef="let element">{{element.playerName}}</mat-cell>
+                </ng-container>
+
+
+                <ng-container matColumnDef="cardReceived" >
+                  <mat-header-cell *matHeaderCellDef >Card Received</mat-header-cell>
+
+                  <mat-cell *matCellDef="let element">{{element.cardReceived}}</mat-cell>
+                </ng-container>
+                <ng-container matColumnDef="is_Goal">
+                  <mat-header-cell *matHeaderCellDef  >Goal</mat-header-cell>
+                  <mat-cell *matCellDef="let element">
+                    <ng-container *ngIf="element.is_Goal == true">
+                      <mat-icon>done</mat-icon>
+                    </ng-container>
+                  </mat-cell>
+                </ng-container>
+                <ng-container matColumnDef="is_goal_from_11m" >
+                  <mat-header-cell *matHeaderCellDef>Penalty</mat-header-cell>
+                  <mat-cell *matCellDef="let element">
+                    <ng-container *ngIf="element.is_goal_from_11m == true">
+                      <mat-icon>done</mat-icon>
+                    </ng-container>
+                  </mat-cell>
+                </ng-container>
+                <ng-container matColumnDef="is_the_bad_goal" >
+                  <mat-header-cell *matHeaderCellDef>Bad Goal</mat-header-cell>
+                  <mat-cell *matCellDef="let element">
+                    <ng-container *ngIf="element.is_the_bad_goal == true">
+                      <mat-icon>done</mat-icon>
+                    </ng-container>
+                  </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="is_MoveOut" >
+                  <mat-header-cell *matHeaderCellDef>Move Out</mat-header-cell>
+                  <mat-cell *matCellDef="let element">
+                    <ng-container *ngIf="element.is_MoveOut == true">
+                      <mat-icon>done</mat-icon>
+                    </ng-container>
+                  </mat-cell>
+                </ng-container>
+                <ng-container matColumnDef="is_MoveIn" >
+                  <mat-header-cell *matHeaderCellDef>Move In</mat-header-cell>
+                  <mat-cell *matCellDef="let element">
+                    <ng-container *ngIf="element.is_MoveIn == true">
+                      <mat-icon>done</mat-icon>
+                    </ng-container>
+                  </mat-cell>
+                </ng-container>
+
+
+                <ng-container matColumnDef="actions">
+                  <mat-header-cell *matHeaderCellDef>Action</mat-header-cell>
+                  <mat-cell *matCellDef="let row">
+                    <button mat-icon-button color="success" (click)="onDelete(row)"><mat-icon>delete</mat-icon></button>
+                  </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="noData">
+                  <mat-footer-cell *matFooterCellDef colspan="6">
+                    No data.
+                  </mat-footer-cell>
+                </ng-container>
+                <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+                <mat-footer-row *matFooterRowDef="['noData']" [ngClass]="{'hide':!(listMatchDetails != null && listMatchDetails.data.length==0)}"></mat-footer-row>
+              </mat-table>
+              <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" [pageSize]="10" showFirstLastButtons></mat-paginator>
+            </div>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+        <!-- /.content -->
+      </div>
+    </div>
+  </section>
+</div>

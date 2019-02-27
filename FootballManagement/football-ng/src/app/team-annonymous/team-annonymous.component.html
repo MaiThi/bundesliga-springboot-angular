@@ -1,0 +1,8 @@
+<div class="container m-t-md">
+
+  <div class="row mg-bottom" *ngFor="let row of newArray">
+    <ng-container *ngFor="let item of row?.items">
+      <app-card-team class="col-xs-12 col-md-4" [item]="item"></app-card-team>
+    </ng-container>
+  </div>
+</div>

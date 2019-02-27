@@ -1,0 +1,41 @@
+<div class="row" style="margin-top: 20px;">
+  <div class="col-md-12">
+    <div class="box">
+      <div class="box-header">
+        <h3 class="box-title">TABLE RESULT | 2018-2019</h3>
+
+      </div><!-- /.box-header -->
+      <div class="box-body table-responsive">
+        <table class="table table-hover abc">
+          <thead>
+          <th>Nr</th>
+          <th>Image</th>
+          <th>Player Name</th>
+          <th>DoB</th>
+          <th>Matches</th>
+          <th>Goals</th>
+          <th><img src="../../../assets/football/yellowCard.png" style="width: 30px; height: 30px;"></th>
+          <th><img src="../../../assets/football/red-card.png" style="width: 30px; height: 30px;"></th>
+
+          </thead>
+          <tbody>
+          <tr *ngFor="let t of playerSS">
+            <td>{{t.nbClothes}}</td>
+            <td><img src="../../../assets/user.png" style="height: 20%; width: auto" ></td>
+            <td>{{t.playerName}}</td>
+            <td>{{t.dob | date: formatsDateTest[2]}}</td>
+            <td><b>{{t.totalMatchesJoined}}</b></td>
+            <td>{{t.totalGoals}}</td>
+            <td>{{t.totalYellowCards}}</td>
+            <td>{{t.totalRedCards}}</td>
+          </tr>
+          </tbody>
+        </table>
+
+      </div><!-- /.box-body -->
+
+    </div>
+  </div>
+
+
+</div>

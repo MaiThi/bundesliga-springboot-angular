@@ -1,0 +1,108 @@
+<div class="content-wrapper">
+  <section class="content-header">
+
+  </section>
+  <section class="content">
+  <div *ngIf="isLoggedIn == false">
+    Please Login into the system
+  </div>
+  <div *ngIf="isLoggedIn; else loggedOut">
+
+    <div class="box-body">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <select class="form-control select2" style="width: 100%;" (change)="selectedSeasonChange($event)">
+              <option>Please choose tournament to create matches</option>
+              <option *ngFor="let ss of tournaments" [value]="ss.id">{{ss.name}}</option>
+            </select>
+          </div><!-- /.form-group -->
+        </div>
+        <div class="col-md-4">
+          <button type="buton"
+                  class="btn btn-outline-info"
+                  style="margin-left:12px;"
+                  [disabled]="bolAlreadyCreatedMatches === 1"
+                  (click)="createAllMatches()">Create Match
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <select class="form-control select2" [disabled]="disableDayNo === 1" style="width: 100%;" (change)="changeValueDayNo($event)">
+              <option *ngFor="let wD of keys()" [value]="wD">{{wD}}</option>
+            </select>
+          </div><!-- /.form-group -->
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 20px;">
+        <div class="col-md-12">
+          <div class="box">
+            <div class="search-div">
+              <button mat-raised-button  [disabled]="matches.length > 9" (click)="addMatchIntoWeekPlay()">
+                <mat-icon><i class="fa fa-plus"></i></mat-icon>Create
+              </button>
+              <mat-form-field class="search-form-field" floatLabel="never">
+                <input matInput [(ngModel)]="searchKey" placeholder="Search" autocomplete="off" (keyup)="applyFilter()">
+                <button mat-button matSuffix mat-icon-button *ngIf="searchKey" (click)="onSearchClear()" >
+                  <mat-icon>clear</mat-icon>
+                </button>
+              </mat-form-field>
+            </div>
+            <div class="mat-elevation-z8">
+              <mat-table [dataSource]="listMatches" matSort>
+                <ng-container matColumnDef="happenedDate">
+                  <mat-header-cell *matHeaderCellDef >Date</mat-header-cell>
+                  <mat-cell *matCellDef="let element">{{element.happenedDate |  date: 'dd-MM-yyyy HH:mm'}}</mat-cell>
+                </ng-container>
+                <ng-container matColumnDef="homeTeamName">
+                  <mat-header-cell *matHeaderCellDef  mat-sort-header >Home Team</mat-header-cell>
+                  <mat-cell *matCellDef="let element">{{element.homeTeamName}}</mat-cell>
+                </ng-container>
+                <ng-container matColumnDef="visitTeamName">
+                  <mat-header-cell *matHeaderCellDef  mat-sort-header>Visit Team</mat-header-cell>
+                  <mat-cell *matCellDef="let element">{{element.visitTeamName}}</mat-cell>
+                </ng-container>
+                <ng-container matColumnDef="homeGoals">
+                  <mat-header-cell *matHeaderCellDef  >Home Goals</mat-header-cell>
+                  <mat-cell *matCellDef="let element">{{element.homeGoals == 999 ?  '-' : element.homeGoals}}</mat-cell>
+
+                </ng-container>
+                <ng-container matColumnDef="visitGoals" >
+                  <mat-header-cell *matHeaderCellDef >Visit Goals</mat-header-cell>
+                  <mat-cell *matCellDef="let element">{{element.visitGoals == 999 ? '-' : element.visitGoals}}</mat-cell>
+                </ng-container>
+                <ng-container matColumnDef="locationName" >
+                  <mat-header-cell *matHeaderCellDef>Location</mat-header-cell>
+                  <mat-cell *matCellDef="let element">{{element.locationName}}</mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="actions">
+                  <mat-header-cell *matHeaderCellDef>Action</mat-header-cell>
+                  <mat-cell *matCellDef="let row">
+                    <button mat-icon-button [disabled]="matches.length > 9" (click)="onEdit(row)"><mat-icon>launch</mat-icon></button>
+                  </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="noData">
+                  <mat-footer-cell *matFooterCellDef colspan="6">
+                    No data.
+                  </mat-footer-cell>
+                </ng-container>
+                <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+                <mat-footer-row *matFooterRowDef="['noData']" [ngClass]="{'hide':!(listMatches != null && listMatches.data.length==0)}"></mat-footer-row>
+              </mat-table>
+              <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" [pageSize]="20" showFirstLastButtons></mat-paginator>
+            </div>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+        <!-- /.content -->
+      </div>
+    </div>
+
+  </div>
+  </section>
+</div>

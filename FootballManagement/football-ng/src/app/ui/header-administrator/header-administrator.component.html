@@ -1,0 +1,19 @@
+<nav class="navbar navbar-light bg-light mb-2 " >
+  <a class="navbar-brand" href="/"><img src="../../../assets/logo.gif" class="logo">Bundesliga</a>
+  <div class="navbar-expand mr-auto">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" routerLink="/teamAdmin">TEAM</a>
+      <a class="nav-item nav-link" routerLink="/playerAdmin">PLAYER</a>
+      <a class="nav-item nav-link" routerLink="/scheduleAdmin">SCHEDULE</a>
+      <a class="nav-item nav-link" routerLink="/matchAdmin">MATCH</a>
+    </div>
+  </div>
+  <div class="navbar-expand ml-auto navbar-nav">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" (click)="logout()">
+        <i class="fa fa-sign-out"  style="font-size:20px;color:red"></i>
+      </a>
+
+    </div>
+  </div>
+</nav>

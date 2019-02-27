@@ -1,0 +1,56 @@
+<div class="content-wrapper">
+  <section class="content">
+    <div *ngIf="isLoggedIn == false">
+      Please Login into the system
+    </div>
+    <div *ngIf="isLoggedIn; else loggedOut">
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="form-group" style="margin-bottom: -4rem;">
+            <select class="form-control select2" [ngModel]="selectedSeason" (change)="selectedSeasonChange($event)">
+              <option *ngFor="let ss of tournaments" [value]="ss.id">{{ss.name}}</option>
+            </select>
+
+          </div>
+        </div>
+
+        <div class="col-md-2"></div>
+
+        <div class="col-md-6">
+          <button type="buton"
+                  class="btn btn-outline-info pull-right"
+                  style="margin-left:12px;"
+                   (click)="selectedAllTeam()">All Teams
+          </button>
+          <button type="buton"
+                  class="btn btn-outline-info pull-right"
+                  style="margin-left:12px;"
+                  (click)="createNewSeason()"
+                  [disabled]="allTeam == 1"><i class="fa fa-plus"></i> New Season
+          </button>
+          <button type="button"
+                  class="btn btn-outline-info pull-right"
+                  style="margin-left:12px;" (click)="createNewTeam()"><i class="fa fa-plus"></i> New Team
+          </button>
+        </div>
+      </div>
+        <div *ngIf="allTeam === 1" (show)="true">
+          <app-teams-info></app-teams-info>
+        </div>
+        <div *ngIf="allTeam === 0" (show)="true">
+          <div *ngIf="newSeasonCheck === 1" (show)="true" style="margin-bottom: -20px;">
+            <app-season [season] = "currentSeason"
+                        (updatedSeason)="updateSeason($event)">
+            </app-season>
+          </div>
+          <app-team [tess]="teamsSeason"
+                    [title] = "titleTeamComponent"
+                    (findedTeam)="findingTeam($event)"
+                    (updatedTeamSeason)="updateTeamSeason($event)"
+                    (deletedTeamSeason)="deleteTeamInTournament($event)">
+          </app-team>
+        </div>
+    </div>
+  </section>
+</div>

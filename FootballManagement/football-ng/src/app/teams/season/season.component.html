@@ -1,0 +1,38 @@
+
+<div class="row" style="margin-top: 20px;">
+  <div class="col-md-12">
+    <div class="box box-info">
+      <div class="box-header with-border">
+        <h3 class="box-title">Create new season</h3>
+      </div><!-- /.box-header -->
+      <!-- form start -->
+        <div class="box-body">
+          Name of new season
+          <div class="row" style="margin-bottom: 10px;">
+            <div class="col-lg-12">
+              <div class="input-group">
+
+                <input type="text" [(ngModel)]="season.name" (change)="updateSeason(season)" class="form-control">
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+          </div>
+          Started Date - Ended Date
+          <div class="row" >
+            <div class="col-lg-6">
+              <div class="input-group">
+
+                <input type="date"[(ngModel)]="season.startedDate " (change)="updateSeason(season)"  class="form-control">
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+            <div class="col-lg-6">
+              <div class="input-group">
+                <input type="date" [(ngModel)]="season.endedDate" (change)="updateSeason(season)"  class="form-control">
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+          </div><!-- /.row -->
+
+        </div><!-- /.box-body -->
+
+    </div><!-- /.box -->
+  </div>
+</div>

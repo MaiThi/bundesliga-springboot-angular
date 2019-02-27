@@ -1,0 +1,141 @@
+<div class="row no-gutters" style="margin-top: 10px;">
+  <div class="col-md-6">
+
+    <div class="box-body table-responsive">
+      <img src="../../../assets/football/flaming-football.png" style="height: 30px; width: 30px;"> &nbsp;&nbsp;&nbsp;GOALS
+      <table class="table abc">
+        <ng-container *ngFor="let mc of matchDetails">
+            <ng-container *ngIf="mc.is_Goal == true">
+                <tr>
+                  <td>
+                    <ng-container *ngIf="match.homeTeamId === mc.teamId">
+                      <img src="../../../assets/TeamLogo/{{match.logoHome}}" style="width: 30px; height: 30px;">
+                    </ng-container>
+                    <ng-container *ngIf="match.visitTeamId === mc.teamId">
+                      <img src="../../../assets/TeamLogo/{{match.logoVisit}}" style="width: 30px; height: 30px;">
+                    </ng-container>
+                  </td>
+                  <td>
+                    {{mc.playerName}}
+                    <ng-container *ngIf="mc.is_the_bad_goal == true">(Own Goal)</ng-container>
+                    <ng-container *ngIf="mc.is_goal_from_11m == true">(Penalty)</ng-container>
+                  </td>
+                  <td>{{mc.action_time}} Min</td>
+                </tr>
+            </ng-container>
+        </ng-container>
+      </table>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="box-body table-responsive">
+      <img src="../../../assets/football/red-yellow.png" style="height: 30px; width: 30px;"> &nbsp;&nbsp;&nbsp;GOALS
+      <table class="table abc">
+        <ng-container *ngFor="let mc of matchDetails">
+          <ng-container *ngIf="mc.cardReceived == 'YELLOW'">
+            <tr>
+              <td>
+                <ng-container *ngIf="match.homeTeamId === mc.teamId">
+                  <img src="../../../assets/TeamLogo/{{match.logoHome}}" style="width: 30px; height: 30px;">
+                </ng-container>
+                <ng-container *ngIf="match.visitTeamId === mc.teamId">
+                  <img src="../../../assets/TeamLogo/{{match.logoVisit}}" style="width: 30px; height: 30px;">
+                </ng-container>
+              </td>
+              <td>
+                  <img src="../../../assets/football/yellowCard.png" style="width: 30px; height: 30px;">
+              </td>
+              <td>
+                {{mc.playerName}}
+              </td>
+              <td>{{mc.action_time}} Min</td>
+            </tr>
+          </ng-container>
+          <ng-container *ngIf="mc.cardReceived == 'RED'">
+            <tr>
+              <td>
+                <ng-container *ngIf="match.homeTeamId === mc.teamId">
+                  <img src="../../../assets/TeamLogo/{{match.logoHome}}" style="width: 30px; height: 30px;">
+                </ng-container>
+                <ng-container *ngIf="match.visitTeamId === mc.teamId">
+                  <img src="../../../assets/TeamLogo/{{match.logoVisit}}" style="width: 30px; height: 30px;">
+                </ng-container>
+              </td>
+              <td>
+                <img src="../../../assets/football/red-card.png" style="width: 30px; height: 30px;">
+              </td>
+              <td>
+                {{mc.playerName}}
+              </td>
+              <td>{{mc.action_time}} Min</td>
+            </tr>
+          </ng-container>
+        </ng-container>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="row no-gutters" style="margin-top: 10px;">
+    <div class="col-md-6">
+      <div class="box-body table-responsive">
+        <img src="../../../assets/TeamLogo/{{match.logoHome}}" style="width: 30px; height: 30px;"> {{match.homeTeamName}}
+        <table class="table abc">
+          <ng-container *ngFor="let mc of matchDetails">
+            <ng-container *ngIf="mc.is_MoveOut == true && match.homeTeamId === mc.teamId">
+              <tr>
+                <td>
+                  <img src="../../../assets/football/in-arrow.png" style="width: 30px; height: 30px;">
+                </td>
+                <td>
+                  {{mc.playerName}}
+                </td>
+                <td>{{mc.action_time}} Min</td>
+              </tr>
+            </ng-container>
+            <ng-container *ngIf="mc.is_MoveIn == true && match.homeTeamId === mc.teamId">
+              <tr>
+                <td>
+                  <img src="../../../assets/football/out-arrow.png" style="width: 30px; height: 30px;">
+                </td>
+                <td>
+                  {{mc.playerName}}
+                </td>
+                <td>{{mc.action_time}} Min</td>
+              </tr>
+            </ng-container>
+          </ng-container>
+        </table>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="box-body table-responsive">
+        <img src="../../../assets/TeamLogo/{{match.logoVisit}}" style="width: 30px; height: 30px;"> {{match.visitTeamName}}
+        <table class="table abc">
+          <ng-container *ngFor="let mc of matchDetails">
+            <ng-container *ngIf="mc.is_MoveOut == true && match.visitTeamId === mc.teamId">
+              <tr>
+                <td>
+                  <img src="../../../assets/football/in-arrow.png" style="width: 30px; height: 30px;">
+                </td>
+                <td>
+                  {{mc.playerName}}
+                </td>
+                <td>{{mc.action_time}} Min</td>
+              </tr>
+            </ng-container>
+            <ng-container *ngIf="mc.is_MoveIn == true && match.visitTeamId === mc.teamId">
+              <tr>
+                <td>
+                  <img src="../../../assets/football/out-arrow.png" style="width: 30px; height: 30px;">
+                </td>
+                <td>
+                  {{mc.playerName}}
+                </td>
+                <td>{{mc.action_time}} Min</td>
+              </tr>
+            </ng-container>
+          </ng-container>
+        </table>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+
+<div class="row" style="margin-top: 20px;">
+  <div class="col-md-12">
+    <div class="box">
+      <div class="box-header">
+        <h3 class="box-title">TABLE RESULT | 2018-2019</h3>
+
+      </div><!-- /.box-header -->
+      <div class="box-body table-responsive">
+        <table class="table table-hover abc">
+          <thead>
+          <th></th>
+          <th>Logo</th>
+          <th>Name</th>
+          <th>Games</th>
+          <th>Points</th>
+          <th>W</th>
+          <th>D</th>
+          <th>L</th>
+          <th>Gates</th>
+          <th>Diff</th>
+          </thead>
+          <tbody>
+          <tr *ngFor="let t of teamsSeason let i = index">
+            <td>{{i + 1}}</td>
+            <td><img src="../../../assets/TeamLogo/{{t.logoTeam}}" style="height: 20%; width: auto" ></td>
+            <td>{{t.teamName}}</td>
+            <td>{{t.weekNo}}</td>
+            <td><b>{{t.totalScore}}</b></td>
+            <td>{{t.mW}}</td>
+            <td>{{t.mD}}</td>
+            <td>{{t.mL}}</td>
+            <td><b>{{t.gF}}:{{t.gA}}</b></td>
+            <td>{{t.diff}}</td>
+          </tr>
+          </tbody>
+        </table>
+
+      </div><!-- /.box-body -->
+
+    </div>
+  </div>
+
+
+</div>

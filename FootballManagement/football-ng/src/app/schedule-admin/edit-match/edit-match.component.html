@@ -1,0 +1,68 @@
+<mat-toolbar>
+  <span>Add Happened Date for Match</span>
+  <span class="fill-remaining-space"></span>
+  <button class="btn-dialog-close" mat-stroked-button (click)="onClose()" tabIndex="-1"><mat-icon><i class="fa fa-window-close"></i></mat-icon></button>
+</mat-toolbar>
+<form class="normal-form" [formGroup]="matchService.form" (submit)="onSubmit()" >
+  <mat-grid-list cols="2" rowHeight="300px">
+    <mat-grid-tile>
+      <div class="controles-container">
+        <input type="hidden"  formControlName="id">
+        <input type="hidden"  formControlName="tournamentId">
+        <input type="hidden"  formControlName="locationId">
+        <input type="hidden"  formControlName="dayNo">
+        <input type="hidden"  formControlName="description">
+        <input type="hidden"  formControlName="visitTeamId">
+        <input type="hidden" formGroupName="finishDetails">
+        <input type="hidden" formGroupName="finishPlayer">
+        <input type="hidden" formGroupName="logoHome">
+        <input type="hidden" formGroupName="logoVisit">
+        <input type="hidden" formGroupName="locationImage">
+        <mat-form-field>
+          <mat-select formControlName="homeTeamId" (selectionChange)="getListVisitTeam()" placeholder="Player">
+            <mat-option>None</mat-option>
+            <ng-container *ngFor="let te of teams">
+              <mat-option [value]="te.id">{{te.teamName}}</mat-option>
+            </ng-container>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-select name="vistTeam"  [(ngModel)]="visitTeam" [ngModelOptions]="{standalone: true}" placeholder="Visit Teams">
+            <ng-container *ngFor="let t of teamsFilters">
+              <mat-option [value]="t.visitTeamId">{{t.visitTeamId}}--{{t.visitTeamName}}</mat-option>
+            </ng-container>
+          </mat-select>
+        </mat-form-field>
+        <label class="example-input-wrapper">
+          Happened Date:
+          <input placeholder="Date Time:"
+                 [(ngModel)]="dateTime" [ngModelOptions]="{standalone: true}"
+                 [owlDateTimeTrigger]="dt" [owlDateTime]="dt">
+          <owl-date-time #dt></owl-date-time>
+        </label>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="controles-container">
+
+        <mat-form-field>
+          <input formControlName="homeGoals" matInput placeholder="Home Goals">
+        </mat-form-field>
+        <mat-form-field>
+          <input formControlName="visitGoals" matInput placeholder="Visit Goals">
+        </mat-form-field>
+        <div class="add-bottom-padding">
+          <mat-radio-group  [(ngModel)]="selectDate" [ngModelOptions]="{standalone: true}"  >
+            <ng-container *ngFor="let sD of sameDayTeam">
+              <mat-radio-button  [value]="sD">{{sD}}</mat-radio-button>
+            </ng-container>
+          </mat-radio-group>
+        </div>
+        <div class="button-row">
+          <button mat-raised-button color="accent" type="submit">Submit</button>
+          <button mat-raised-button color="warn" (click)="onClear()">Clear</button>
+        </div>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</form>

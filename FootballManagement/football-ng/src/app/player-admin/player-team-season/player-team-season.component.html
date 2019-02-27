@@ -1,0 +1,72 @@
+<div class="row" style="margin-top: 20px;">
+  <!-- Notebooks Menu -->
+  <div class="col-md-3">
+    <br>
+    <div class="list-group list-group-flush">
+      <!-- Notebook List -->
+      <a *ngFor="let s of teamsSeason" class="list-group-item list-group-item-action">
+        <i class="fa fa-futbol-o" aria-hidden="true"></i>&nbsp;
+        <input [ngModel]="s.teamName"  type="text" (click)="filterPlayerByTeamTour(s)" readonly class="input-label" style="width: 80%"/>
+      </a>
+    </div>
+  </div>
+
+  <!-- Notes Panel -->
+  <div class="col-md-9">
+    <ng-container *ngIf="selectedTeamTour != null">{{selectedTeamTour.teamName}}</ng-container>
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Message if there are no notes -->
+        <div class="box">
+        <div class="search-div">
+          <button mat-raised-button  [disabled]="players !== null && players.length !== 0 || selectedTeamTour == null" (click)="onCreateMultiple()">
+            <mat-icon><i class="fa fa-plus"></i></mat-icon> Multiple
+          </button>
+          <button mat-raised-button [disabled]= "selectedTeamTour == null" (click)="onCreateSingle()">
+            <mat-icon><i class="fa fa-plus"></i></mat-icon>Single
+          </button>
+          <mat-form-field class="search-form-field" floatLabel="never">
+            <input matInput [(ngModel)]="searchKey" placeholder="Search" autocomplete="off" (keyup)="applyFilter()">
+            <button mat-button matSuffix mat-icon-button *ngIf="searchKey" (click)="onSearchClear()">
+              <mat-icon>clear</mat-icon>
+            </button>
+          </mat-form-field>
+        </div>
+        <div class="mat-elevation-z8">
+          <mat-table [dataSource]="listPlayerInSS" matSort>
+            <ng-container matColumnDef="nbClothes">
+              <mat-header-cell *matHeaderCellDef >Clothes No</mat-header-cell>
+              <mat-cell *matCellDef="let element">{{element.nbClothes}}</mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="playerName" >
+              <mat-header-cell *matHeaderCellDef >Name</mat-header-cell>
+              <mat-cell *matCellDef="let element">{{element.playerName}}</mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="nationality" >
+              <mat-header-cell *matHeaderCellDef>Nationality</mat-header-cell>
+              <mat-cell *matCellDef="let element">{{element.nationality}}</mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="actions">
+              <mat-header-cell *matHeaderCellDef>Action</mat-header-cell>
+              <mat-cell *matCellDef="let row">
+                <button mat-icon-button (click)="onEdit(row)"><mat-icon>launch</mat-icon></button>
+                <button mat-icon-button color="warn"(click)="onDelete(row)"><mat-icon><i class="fa fa-trash-o"></i></mat-icon></button>
+              </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="noData">
+              <mat-footer-cell *matFooterCellDef colspan="6">
+                No data
+              </mat-footer-cell>
+            </ng-container>
+            <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+            <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+            <mat-footer-row *matFooterRowDef="['noData']" [ngClass]="{'hide':listPlayerInSS!=null}"></mat-footer-row>
+          </mat-table>
+          <mat-paginator [pageSizeOptions]="[5, 10, 20]" [pageSize]="15" showFirstLastButtons></mat-paginator>
+        </div>
+      </div>
+      </div>
+    </div>
+
+  </div>
+</div>

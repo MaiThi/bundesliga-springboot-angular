@@ -1,0 +1,42 @@
+
+<div class="row" style="margin-top: 20px;">
+  <div class="col-md-12">
+    <div class="box">
+      <div class="box-header">
+        <h3 class="box-title">Teams</h3>
+         <button (click)="createNewTeam()">New Team</button>
+        <div class="box-tools">
+          <div class="form-control" style="width: 150px;">
+
+          </div>
+        </div>
+      </div><!-- /.box-header -->
+      <div class="box-body table-responsive">
+        <table class="table table-hover abc">
+          <thead>
+          <th>Name</th>
+          <th>Logo</th>
+          <th>Edit Logo</th>
+          <th>Delete</th>
+          </thead>
+          <tbody>
+          <tr *ngFor="let t of teams">
+            <td>
+              <input class="input-label" type="text"
+                     [(ngModel)]="t.name"
+                     (change)="updateTeam(t)">
+            </td>
+            <td><img src="../../../assets/TeamLogo/{{t.logoTeam}}" style="height: 40%; width: auto" ></td>
+            <td><i class="fa fa-edit-o"></i></td>
+            <td> <a (click)="deleteTeam(t)" class="text-danger"><i class="fa fa-trash-o"></i></a></td>
+          </tr>
+          </tbody>
+        </table>
+
+      </div><!-- /.box-body -->
+
+    </div>
+  </div>
+
+
+</div>

@@ -1,0 +1,89 @@
+
+<div class="content-wrapper">
+  <div class="row" style=" padding-top: 20px;padding-left: 20px;" >
+
+    <div class="col-md-4">
+     <i class="fa fa-bullhorn"></i>   <label style="font-size: 17px;"> SCHEDULE, RESULTS & DATES |
+      {{selectedDayNo}}</label>
+    </div>
+
+    <div class="col-md-8">
+
+        <select style=" width: 130px; " class="form-control select2 pull-right" [ngModel]="selectedTeam" (change)="selectedTeamChanged($event)">
+          <option [value]="0">All teams</option>
+          <option *ngFor="let ss of listTeamsInTour" [value]="ss.id">{{ss.teamName}}</option>
+        </select>
+        <select style=" width: 115px  " class="form-control select2 pull-right" [(ngModel)]="selectedDayNo" (change)="changeValueDayNo($event)">
+          <option *ngFor="let wD of keys()" [value]="wD">{{wD}}</option>
+        </select>
+
+    </div>
+  </div>
+  <section class="content">
+    <div class="box">
+    <div class="row" style="margin-top: 20px;">
+      <div class="col-md-12">
+        <div class="box-body table-responsive">
+          <table class="table table-hover abc">
+            <ng-container *ngIf="isSelectTeam === 0">
+              <ng-container *ngFor="let d of days">
+                <tr  >
+                  <td colspan="3" style="text-align:center"><b>{{d | date: formatsDateTest[3] }} Uhr</b></td>
+                  <td></td>
+                </tr>
+                <ng-container *ngFor="let m of listMatch">
+                  <ng-container *ngIf="d == m.happenedDate">
+                    <tr>
+                      <td style="text-align:right; font-family: Lucida Console;">
+                        {{m.homeTeamName}}&nbsp; <img src="../../assets/TeamLogo/{{m.logoHome}}" style="width: 30px; height: 30px;">
+                      </td>
+                      <td style="text-align:center;">
+                          <ng-container *ngIf="m.homeGoals === 999 && m.visitGoals === 999">-:-</ng-container>
+                        <ng-container *ngIf="m.homeGoals !== 999 && m.visitGoals !== 999"><b>{{m.homeGoals}}</b> - <b>{{m.visitGoals}}</b></ng-container>
+                        <br>
+                        <label style="font-family: Courier New; font-size: 15px">{{m.locationName}}</label>
+                      </td>
+                      <td  style="text-align:left; font-family: Lucida Console;">
+                         <img src="../../assets/TeamLogo/{{m.logoVisit}}" style="width: 30px; height: 30px;"> &nbsp;{{m.visitTeamName}}
+                      </td>
+                      <td>
+                          <a [routerLink]="['/showMatchInfoAnonymous', m.id]" >Match details</a>
+                      </td>
+                    </tr>
+                  </ng-container>
+                </ng-container>
+              </ng-container>
+            </ng-container>
+            <ng-container *ngIf="isSelectTeam === 1">
+              <ng-container *ngFor="let m of listMatch">
+                  <tr  >
+                    <td colspan="3" style="text-align:center"><b>{{m.happenedDate | date: formatsDateTest[3] }} Uhr</b></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:right; font-family: Lucida Console;">
+                      {{m.homeTeamName}}&nbsp; <img src="../../assets/TeamLogo/{{m.logoHome}}" style="width: 30px; height: 30px;">
+                    </td>
+                    <td style="text-align:center;">
+                      <ng-container *ngIf="m.homeGoals === 999 && m.visitGoals === 999">-:-</ng-container>
+                      <ng-container *ngIf="m.homeGoals !== 999 && m.visitGoals !== 999"><b>{{m.homeGoals}}</b> - <b>{{m.visitGoals}}</b></ng-container>
+                      <br>
+                      <label style="font-family: Courier New; font-size: 15px">{{m.locationName}}</label>
+                    </td>
+                    <td  style="text-align:left; font-family: Lucida Console;">
+                      <img src="../../assets/TeamLogo/{{m.logoVisit}}" style="width: 30px; height: 30px;"> &nbsp;{{m.visitTeamName}}
+                    </td>
+                    <td>
+                      <a [routerLink]="['/showMatchInfoAnonymous', m.id]" >Match details</a>
+                    </td>
+                  </tr>
+              </ng-container>
+            </ng-container>
+          </table>
+
+        </div><!-- /.box-body -->
+      </div>
+    </div>
+    </div>
+  </section>
+</div>

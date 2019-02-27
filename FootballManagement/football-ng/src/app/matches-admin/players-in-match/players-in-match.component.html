@@ -1,0 +1,148 @@
+<div class="content-wrapper">
+  <section class="content-header">
+
+  </section>
+  <section class="content">
+    <div class="box-body">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="form-group">
+              <button [disabled]="playerInMatch.length > 0" (click)="addPlayerAuto()">Add Players by Default</button>
+          </div><!-- /.form-group -->
+        </div>
+        <ng-container *ngIf="matchesJoinedBefore != null">
+        <div class="col-md-4">
+
+          <select [(ngModel)]="selectedMatch"  [disabled]="playerInMatch.length > 0">
+            <ng-container *ngFor="let m of matchesJoinedBefore">
+              <option [value]="m.id"> The Matches combat with
+                <ng-container *ngIf="m.visitTeamId === teamSeasonId">
+                    {{m.homeTeamName}}
+                </ng-container>
+                <ng-container *ngIf="m.homeTeamId === teamSeasonId">
+                  {{m.visitTeamName}}
+                </ng-container>
+              </option>
+            </ng-container>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group">
+          <button [disabled]="playerInMatch.length > 0" (click)="addPlayersBasedOnPreviousMatch()">Add Players</button>
+          </div>
+        </div>
+        </ng-container>
+      </div>
+      <ng-container *ngIf="match != null && match.visitTeamId === teamSeasonId">
+          {{match.visitTeamName}}
+      </ng-container>
+      <ng-container *ngIf="match != null && match.homeTeamId === teamSeasonId">
+        {{match.homeTeamName}}
+      </ng-container>
+      <div class="row" style="margin-top: 20px;">
+        <div class="col-md-12">
+          <div class="box">
+            <div class="search-div">
+              <button mat-raised-button color="primary" (click)="removeSelectedPlayer()">
+                Remove Selected Players
+              </button>
+              <mat-form-field class="search-form-field" floatLabel="never">
+                <input matInput [(ngModel)]="searchKey" placeholder="Search" autocomplete="off" (keyup)="applyFilter()">
+                <button mat-button matSuffix mat-icon-button (click)="onSearchClear()" >
+                  <mat-icon>clear</mat-icon>
+                </button>
+              </mat-form-field>
+            </div>
+            <div class="mat-elevation-z8">
+
+              <mat-table [dataSource]="listPlayerMatch" matSort>
+
+                <!-- Checkbox Column -->
+                <ng-container matColumnDef="select">
+                  <mat-header-cell *matHeaderCellDef>
+                    <mat-checkbox (change)="$event ? masterToggle() : null"
+                                  [checked]="selection.hasValue() && isAllSelected()"
+                                  [indeterminate]="selection.hasValue() && !isAllSelected()">
+                    </mat-checkbox>
+                  </mat-header-cell>
+                  <mat-cell *matCellDef="let row">
+                    <mat-checkbox (click)="$event.stopPropagation()"
+                                  (change)="$event ? selection.toggle(row) : null"
+                                  [checked]="selection.isSelected(row)">
+                    </mat-checkbox>
+                  </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="nbClothes">
+                  <mat-header-cell *matHeaderCellDef  mat-sort-header>Clothes No.</mat-header-cell>
+                  <mat-cell *matCellDef="let element">{{element.nbClothes}}</mat-cell>
+                </ng-container>
+                <ng-container matColumnDef="playerName">
+                  <mat-header-cell *matHeaderCellDef >Player Name</mat-header-cell>
+                  <mat-cell *matCellDef="let element">{{element.playerName}}</mat-cell>
+                </ng-container>
+                <ng-container matColumnDef="positionName">
+                  <mat-header-cell *matHeaderCellDef  mat-sort-header >Position</mat-header-cell>
+                  <mat-cell *matCellDef="let element">
+                    <input matInput [value]="element.positionName" [(ngModel)]="element.positionName">
+                  </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="goals">
+                  <mat-header-cell *matHeaderCellDef  >Goals</mat-header-cell>
+                  <mat-cell *matCellDef="let element">
+                    <input matInput [value]="element.goals" [(ngModel)]="element.goals">
+                  </mat-cell>
+                </ng-container>
+                <ng-container matColumnDef="yellowCards" >
+                  <mat-header-cell *matHeaderCellDef >Yellow Card</mat-header-cell>
+
+                  <mat-cell *matCellDef="let element">
+                    <input matInput [value]="element.yellowCards" [(ngModel)]="element.yellowCards">
+                  </mat-cell>
+                </ng-container>
+                <ng-container matColumnDef="redCards" >
+                  <mat-header-cell *matHeaderCellDef>Red Card</mat-header-cell>
+                  <mat-cell *matCellDef="let element">
+                    <input matInput [value]="element.redCards" [(ngModel)]="element.redCards">
+                  </mat-cell>
+                </ng-container>
+                <ng-container matColumnDef="actions">
+                  <mat-header-cell *matHeaderCellDef>Action</mat-header-cell>
+                  <mat-cell *matCellDef="let row">
+                    <button mat-icon-button (click)="onEdit(row)"><mat-icon>edit</mat-icon></button>
+                    <button mat-icon-button color="success" (click)="onDelete(row)"><mat-icon>delete</mat-icon></button>
+                  </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="noData">
+                  <mat-footer-cell *matFooterCellDef colspan="6">
+                    No data.
+                  </mat-footer-cell>
+                </ng-container>
+                <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+                <mat-footer-row *matFooterRowDef="['noData']" [ngClass]="{'hide':!(listPlayerMatch != null && listPlayerMatch.data.length==0)}"></mat-footer-row>
+              </mat-table>
+              <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" [pageSize]="10" showFirstLastButtons></mat-paginator>
+            </div>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+        <!-- /.content -->
+      </div>
+      <div  class="box box-solid">
+        <div class="box-header with-border">
+          <i class="fa fa-warning"></i><h6 class="box-title">Notice for Position in the Match</h6>
+        </div>
+        <div class ="box-body">
+          <div class="row">
+            <div class="col-sm">GK: Goalkeeper <br>FB: Full-Back <br>WB: Wing-Back <br> CM: Central Midfield</div>
+            <div class="col-sm">SP: Sweeper <br>WN: Wide Midfield/Winger<br> CF: Striker/Centre Forward <br> BS: Behind The Striker</div>
+            <div class="col-sm">CO: Coach <br> AC: Assistant Coach <br>SUB: Substitute <br> IN: Initialize</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</div>

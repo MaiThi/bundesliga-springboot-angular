@@ -1,0 +1,167 @@
+# API NOTE MANAGEMENT
+
+###
+
+
+GET {{host-url}}//positions/all
+
+
+###
+
+POST {{host-url}}//positions
+Content-Type: application/json
+
+{
+  "name": "Coach",
+  "shortName": "CO"
+}
+
+###
+
+GET {{host-url}}//teams/all
+
+###
+POST {{host-url}}//teams
+Content-Type: application/json
+
+{
+  "id": 23,
+  "name": "Test1",
+  "logoTeam": "FC_Augsburg.gif"
+}
+###
+
+DELETE {{host-url}}//tournaments/13
+
+###
+
+GET {{host-url}}//tournaments/all
+
+
+###
+
+POST {{host-url}}//tournaments/
+Content-Type: application/json
+
+{
+  "id": -1,
+  "name": "New Season 1",
+  "startedDate": null,
+  "endedDate": null,
+  "nbTeams": 18
+}
+
+###
+
+
+GET {{host-url}}//teamsinseason/byTeamAndTournament/27/12
+
+###
+
+POST {{host-url}}//tournaments
+Content-Type: application/json
+
+{
+  "name": "Tested Season",
+  "startedDate": "2008-08-17T22:00:00.000+0000",
+  "endedDate" : "2009-05-07T22:00:00.000+0000",
+  "nbTeams": 18
+}
+
+###
+
+DELETE {{host-url}}//tournaments/18
+
+###
+
+GET {{host-url}}//teamsinseason/all
+
+###
+
+GET {{host-url}}//teamsinseason/byTournament/11
+
+###
+
+
+GET {{host-url}}//teamsinseason/get/17/12
+
+###
+POST {{host-url}}//players
+Content-Type: application/json
+
+{
+
+  "firstName": "Name",
+  "lastName": "bafdsfdsfdsf",
+  "dateOfBirth": "2000-03-02",
+  "image": "user.png",
+  "nationality": "Vietnamese",
+  "weight": 12,
+  "height": 12
+}
+
+###
+PUT {{host-url}}//play-in-tournaments
+Content-Type: application/json
+
+{
+  "id": 2,
+  "nbClothes": 20,
+  "teamTourId": 21,
+  "playerId": 2,
+  "teamName": "user.png",
+  "tournamentName": "Vietnamese",
+  "playerName": 12,
+  "brithday": 12,
+  "nationality": "abc"
+}
+###
+
+GET {{host-url}}//play-in-tournaments/getPlayerIdsByTeamTour/4
+
+###
+
+
+GET {{host-url}}//players/test/132,133,134
+
+###
+GET {{host-url}}//matches/initialize/12
+
+###
+GET {{host-url}}//matches/getMatchesByTournamentAndDayNo/48/DAY_2
+
+###
+GET {{host-url}}//play-in-matches/getByMatchAndTeam/17/4
+###
+
+GET {{host-url}}play-in-tournaments/api/addPlayerInTourApi/15/48/503/530
+
+###
+
+
+PUT {{host-url}}/play-in-tournaments/api
+Content-Type: application/json
+
+{
+  "id": 844,
+  "nbClothes": 30,
+  "teamTourId": 63,
+  "playerId": 529,
+  "teamName": "user.png",
+  "tournamentName": "Vietnamese",
+  "playerName": 12,
+  "brithday": 12,
+  "nationality": "abc"
+}
+###
+
+GET {{host-url}}play-in-tournaments/api/addRandomNbClothes/67
+
+###
+GET {{host-url}}teamsinseason/api/byTournament/48
+
+###
+
+GET {{host-url}}play-in-tournaments/api/updateApi
+
+###

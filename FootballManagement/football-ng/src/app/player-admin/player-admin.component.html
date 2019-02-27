@@ -1,0 +1,43 @@
+
+<div class="content-wrapper">
+  <section class="content-header">
+
+    </section>
+    <section class="content">
+      <div *ngIf="isLoggedIn == false">
+        Please Login into the system
+      </div>
+      <div *ngIf="isLoggedIn; else loggedOut">
+
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="form-group" style="margin-bottom: -4rem;">
+            <select class="form-control select2" [ngModel]="selectedSeason" (change)="selectedSeasonChange($event)">
+              <option *ngFor="let ss of tournaments" [value]="ss.id">{{ss.name}}</option>
+            </select>
+
+          </div>
+        </div>
+
+        <div class="col-md-2"></div>
+
+        <div class="col-md-6">
+          <button type="buton"
+                  class="btn btn-outline-info pull-right"
+                  style="margin-left:12px;" (click)="switchListPage = 1"> All Players Infor
+          </button>
+          <button type="buton"
+                  class="btn btn-outline-info pull-right"
+                  style="margin-left:12px;" (click)="switchListPage = 0"> Player with Team and Season
+          </button>
+
+        </div>
+      </div>
+      <app-player-team-season *ngIf="switchListPage === 0" (show)="true"  [teamsSeason]="teamsSeason">
+      </app-player-team-season>
+      <app-players-info *ngIf="switchListPage === 1" (show)="true" ></app-players-info>
+      </div>
+    </section>
+
+</div>

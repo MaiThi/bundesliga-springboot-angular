@@ -1,0 +1,94 @@
+<mat-toolbar>
+  <span>Add Details for Match</span>
+  <span class="fill-remaining-space"></span>
+  <button class="btn-dialog-close" mat-stroked-button (click)="onClose()" tabIndex="-1"><mat-icon><i class="fa fa-window-close"></i></mat-icon></button>
+</mat-toolbar>
+<form class="normal-form" [formGroup]="matchDetailService.form" (submit)="onSubmit()" >
+  <mat-grid-list cols="2" rowHeight="300px">
+    <mat-grid-tile>
+      <div class="controles-container">
+        <input type="hidden"  formControlName="id">
+        <input type="hidden"  formControlName="happenedDate">
+        <input type="hidden"  formControlName="playInMatchId">
+        <input type="hidden"  formControlName="playerId">
+        <input type="hidden"  formControlName="playerName">
+        <input type="hidden"  formControlName="teamId">
+        <input type="hidden" formGroupName="teamName">
+        <input type="hidden" formGroupName="is_Goal">
+        <input type="hidden" formGroupName="is_goal_from_11m">
+        <input type="hidden" formGroupName="is_the_bad_goal">
+        <input type="hidden" formGroupName="is_MoveIn">
+        <input type="hidden" formGroupName="is_MoveOut">
+        <div class="add-bottom-padding">
+          <mat-radio-group [(ngModel)]="selectedTeam" [ngModelOptions]="{standalone: true}" (change)="filterPlayer()">
+            <mat-radio-button  [value]="match?.homeTeamId">{{match?.homeTeamName}}</mat-radio-button>
+            <mat-radio-button [value]="match?.visitTeamId">{{match?.visitTeamName}}</mat-radio-button>
+          </mat-radio-group>
+        </div>
+
+        <mat-form-field>
+          <mat-select  [(ngModel)]="selectedPlayerInMatch" [ngModelOptions]="{standalone: true}" placeholder="Player">
+            <ng-container *ngFor="let pl of playerFilters">
+              <mat-option [value]="pl.id">{{pl.playerName}}--{{pl.positionName}}</mat-option>
+            </ng-container>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field>
+          <input formControlName="action_time" type="number" matInput placeholder="Action Time">
+        </mat-form-field>
+        <mat-form-field>
+          <label><b>Card Received</b></label>
+          <mat-select formControlName="cardReceived">
+            <mat-option [value]="0">--</mat-option>
+            <mat-option [value]="typeCards[0]">{{typeCards[0]}}</mat-option>
+            <mat-option [value]="typeCards[1]">{{typeCards[1]}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="controles-container">
+
+        <div class="add-bottom-padding">
+          <label><b>Is Goal?</b></label>
+          <mat-radio-group [(ngModel)]="isGoal" [ngModelOptions]="{standalone: true}">
+            <mat-radio-button  [value]="true">True</mat-radio-button>
+            <mat-radio-button  [value]="false">False</mat-radio-button>
+          </mat-radio-group>
+        </div>
+        <div class="add-bottom-padding">
+          <label><b>Is Goal from 11m?</b></label>
+          <mat-radio-group [(ngModel)]="isFrom11" [ngModelOptions]="{standalone: true}">
+            <mat-radio-button  [value]="true">True</mat-radio-button>
+            <mat-radio-button  [value]="false">False</mat-radio-button>
+          </mat-radio-group>
+        </div>
+        <div class="add-bottom-padding">
+          <label><b>Is the bad Goal?</b></label>
+          <mat-radio-group [(ngModel)]="isBadGoal" [ngModelOptions]="{standalone: true}">
+            <mat-radio-button  [value]="true">True</mat-radio-button>
+            <mat-radio-button  [value]="false">False</mat-radio-button>
+          </mat-radio-group>
+        </div>
+        <div class="add-bottom-padding">
+          <label><b>Does player move out?</b></label>
+          <mat-radio-group [(ngModel)]="isMoveOut" [ngModelOptions]="{standalone: true}">
+            <mat-radio-button  [value]="true">True</mat-radio-button>
+            <mat-radio-button  [value]="false">False</mat-radio-button>
+          </mat-radio-group>
+        </div>
+        <div class="add-bottom-padding">
+          <label><b>Does player Move In?</b></label>
+          <mat-radio-group [(ngModel)]="isMoveIn" [ngModelOptions]="{standalone: true}">
+            <mat-radio-button  [value]="true">True</mat-radio-button>
+            <mat-radio-button  [value]="false">False</mat-radio-button>
+          </mat-radio-group>
+        </div>
+        <div class="button-row">
+          <button mat-raised-button color="accent" type="submit">Submit</button>
+          <button mat-raised-button color="warn" (click)="onClear()">Clear</button>
+        </div>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</form>

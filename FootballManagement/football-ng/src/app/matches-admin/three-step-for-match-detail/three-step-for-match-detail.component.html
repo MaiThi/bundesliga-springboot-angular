@@ -1,0 +1,52 @@
+<mat-horizontal-stepper>
+  <mat-step label="Step 1: Assign Players for Home Team">
+    <ng-container *ngIf="match != null">
+      <app-players-in-match [matchId]="matchId"
+                            [teamSeasonId]="match.homeTeamId"
+                            [match]="match" >
+      </app-players-in-match>
+    </ng-container>
+    <div>
+      <button mat-button matStepperNext>Next</button>
+    </div>
+  </mat-step>
+  <mat-step label="Step 2: Assign Players for Away Team">
+    <ng-container *ngIf="match != null">
+      <app-players-in-match [matchId]="matchId"
+                              [teamSeasonId]="match.visitTeamId"
+                              [match]="match" >
+      </app-players-in-match>
+    </ng-container>
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button matStepperNext>Next</button>
+    </div>
+  </mat-step>
+  <mat-step label="Step 3: Add Actions for Match">
+    <ng-container *ngIf="match != null">
+        <app-match-happened-details [match]="match">
+        </app-match-happened-details>
+    </ng-container>
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button matStepperNext>Next</button>
+    </div>
+  </mat-step>
+  <mat-step label="Step 4: Done">
+    <ng-container *ngIf="match != null">
+        <div  class="box box-solid">
+          <div class="box-header with-border">
+            <i class="fa fa-check-circle"></i><h6 class="box-title">FINAL STEP </h6>
+          </div>
+          <div class ="box-body">
+               <p class="lead">In this step, clicking the calculate score button for home team and away team.</p>
+              <button [disabled]="match.finishDetails == '1'" class="btn btn-block btn-primary" (click)="calculateScoreForTeam()">Calculate</button>
+          </div>
+
+        </div>
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+        </div>
+    </ng-container>
+  </mat-step>
+</mat-horizontal-stepper>

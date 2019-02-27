@@ -1,0 +1,53 @@
+
+<div class="row" style="margin-top: 20px;">
+  <div class="col-md-12">
+    <div class="box">
+      <div class="box-header">
+        <h3 class="box-title">{{title}}</h3>
+        <div class="box-tools">
+          <div class="input-group" style="width: 150px;">
+            <input type="text" name="table_search" class="form-control input-sm pull-right" placeholder="Search">
+            <div class="input-group-btn">
+              <button class="btn btn-sm btn-default"><i class="fa fa-search"></i></button>
+            </div>
+          </div>
+        </div>
+      </div><!-- /.box-header -->
+      <div class="box-body table-responsive">
+        <table class="table table-hover abc">
+          <thead>
+          <th>Logo</th>
+          <th>Name</th>
+          <th>Out</th>
+          <th>Home</th>
+          <th>Total</th>
+          <th>Edit</th>
+          <th>Delete</th>
+          </thead>
+          <tbody>
+            <tr *ngFor="let t of tess">
+              <td><img src="../../../assets/TeamLogo/{{t.logoTeam}}" style="height: 20%; width: auto" ></td>
+              <td><input class="input-label" type="text" [(ngModel)]="t.teamName"></td>
+              <td><input class="input-label-number" type="text" [(ngModel)]="t.outJScore"></td>
+              <td><input class="input-label-number" type="text" [(ngModel)]="t.homeJScore"></td>
+              <td><input class="input-label-number" type="text" [(ngModel)]="t.totalScore"></td>
+              <td *ngIf="t.status === 1">
+                <a (click)="findingTeam(t)"><i  class="fa fa-edit"></i></a>
+              </td>
+              <td *ngIf="t.status != 1">
+                <a (click)="updateTeamInTournament(t)"><i  class="fa fa-edit"></i></a>
+              </td>
+              <td>
+                <a (click)="deletingTeam(t)"><i class="fa fa-trash-o"></i></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div><!-- /.box-body -->
+
+    </div>
+  </div>
+
+
+</div>

@@ -1,0 +1,165 @@
+
+
+
+<ng-container *ngIf="match != null && matchDetails != null">
+    <div class="row">
+      <div class="col-md-12">
+        <img style="width: 100%; height: 70%; filter: blur(2.5px); -webkit-filter: blur(3px);" src="../../assets/stadiums/background.jpg" [alt]="match.locationName">
+
+          <div class="bg-text" style="padding-top: 10px">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="../../assets/TeamLogo/{{match.logoHome}}" style="width: 80px; height: 80px;">
+
+              </div>
+
+              <div class="col-md-4"></div>
+
+              <div class="col-md-4">
+                <img src="../../assets/TeamLogo/{{match.logoVisit}}" style="width: 80px; height: 80px;">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">
+                <label style="font-family: 'Apple Color Emoji'">{{match.homeTeamName.toUpperCase()}}</label>
+              </div>
+
+              <div class="col-md-4">
+                <ng-container *ngIf="match.homeGoals === 999 && match.visitGoals === 999">
+                  -:-
+                </ng-container>
+                <ng-container *ngIf="match.homeGoals !== 999 && match.visitGoals !== 999">
+                 <label style="font-family: 'Apple Color Emoji'; font-size: 30px;"> <b>{{match.homeGoals}}</b> - <b>{{match.visitGoals}}</b></label>
+                </ng-container>
+
+              </div>
+
+              <div class="col-md-4">
+                <label style="font-family: 'Apple Color Emoji'">{{match.visitTeamName.toUpperCase()}}</label>
+              </div>
+            </div>
+          </div>
+        <div class="top-right text-white " style="text-align: right">
+          <b> {{match.happenedDate | date: formatsDateTest[2]}}</b> &nbsp;&nbsp;<i class="fa fa-calendar" aria-hidden="true"></i>
+            <br>
+            <br>
+           <b> {{match.happenedDate | date: formatsDateTest[10]}}</b>&nbsp;<i class="fa fa-clock-o" aria-hidden="true"></i>
+            <br>
+            <br>
+          <b>{{match.locationName}}</b>&nbsp;<i class="fa fa-map-marker margin-r-5"></i>
+            <br>
+        </div>
+      </div>
+    </div>
+
+    <mat-tab-group style="margin-top: -130px">
+      <mat-tab label="Match Details">
+        <ng-template matTabContent>
+          <div class="container-fluid" style="margin-top: 20px; margin-bottom: 20px;">
+            <div class="col-md-12">
+              <div class="row">
+                <br>
+
+                <div class="timeline">
+
+            <span class="timeline-label">
+                      <button class="btn btn-info">
+                              <img src="../../assets/football/white-flag-outline-with-thin-pole.png" style="height: 30px; width: 30px;">
+                            </button>
+            </span>
+                  <ng-container *ngFor="let match of matchDetails">
+                    <ng-container *ngIf="match.teamId === homeTeamId">
+                      <div class="timeline-item timeline-item-left">
+                        <div class="timeline-point timeline-point-info">{{match.action_time}}</div>
+                        <div class="timeline-event timeline-event-info">
+                          <div class="timeline-body">
+                            <p>
+                              {{match.playerName}}
+                              <ng-container *ngIf="match.is_Goal == true">
+                                <ng-container *ngIf="match.is_the_bad_goal == true">
+                                  <img src="../../assets/football/football-ball-with-thick-outline.png" style="height: 30px; width: 30px;">
+                                </ng-container>
+                                <ng-container *ngIf="match.is_goal_from_11m == true">
+                                  <img src="../../assets/football/goal.png" style="height: 30px; width: 30px;">
+                                </ng-container>
+                                <ng-container *ngIf="match.is_goal_from_11m == false && match.is_the_bad_goal == false">
+                                  <img src="../../assets/football/football-in-midair.png" style="height: 30px; width: 30px;">
+                                </ng-container>
+                              </ng-container>
+                              <ng-container *ngIf="match.cardReceived === 'YELLOW'">
+                                <img src="../../assets/football/football-yellow-warning-card.png" style="height: 30px; width: 30px;">
+                              </ng-container>
+                              <ng-container *ngIf="match.cardReceived === 'RED'">
+                                <img src="../../assets/football/football-card-with-cross-mark.png" style="height: 30px; width: 30px;">
+                              </ng-container>
+                              <ng-container *ngIf="match.is_MoveOut == true ">
+                                <img src="../../assets/football/moveOut.png" style="height: 30px; width: 30px;">
+                              </ng-container>
+                              <ng-container *ngIf="match.is_MoveIn == true ">
+                                <img src="../../assets/football/moveIn.png" style="height: 30px; width: 30px;">
+                              </ng-container>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </ng-container>
+                    <ng-container *ngIf="match.teamId === visitTeamId">
+                      <div class="timeline-item timeline-item-right">
+                        <div class="timeline-point timeline-point-info">{{match.action_time}}</div>
+                        <div class="timeline-event timeline-event-info">
+                          <div class="timeline-body">
+                            <p>
+                              {{match.playerName}}
+                              <ng-container *ngIf="match.is_Goal == true">
+                                <ng-container *ngIf="match.is_the_bad_goal == true">
+                                  <img src="../../assets/football/football-ball-with-thick-outline.png" style="height: 30px; width: 30px;">
+                                </ng-container>
+                                <ng-container *ngIf="match.is_goal_from_11m == true">
+                                  <img src="../../assets/football/goal.png" style="height: 30px; width: 30px;">
+                                </ng-container>
+                                <ng-container *ngIf="match.is_goal_from_11m == false && match.is_the_bad_goal == false">
+                                  <img src="../../assets/football/football-in-midair.png" style="height: 30px; width: 30px;">
+                                </ng-container>
+                              </ng-container>
+                              <ng-container *ngIf="match.cardReceived === 'YELLOW'">
+                                <img src="../../assets/football/football-yellow-warning-card.png" style="height: 30px; width: 30px;">
+                              </ng-container>
+                              <ng-container *ngIf="match.cardReceived === 'RED'">
+                                <img src="../../assets/football/football-card-with-cross-mark.png" style="height: 30px; width: 30px;">
+                              </ng-container>
+                              <ng-container *ngIf="match.is_MoveOut == true ">
+                                <img src="../../assets/football/moveOut.png" style="height: 30px; width: 30px;">
+                              </ng-container>
+                              <ng-container *ngIf="match.is_MoveIn == true ">
+                                <img src="../../assets/football/moveIn.png" style="height: 30px; width: 30px;">
+                              </ng-container>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </ng-container>
+                  </ng-container>
+
+                  <span class="timeline-label">
+                            <button class="btn btn-info">
+                              <img src="../../assets/football/finish.png" style="height: 30px; width: 30px;">
+                            </button>
+            </span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </ng-template>
+      </mat-tab>
+      <mat-tab label="Statistic">
+        <ng-template matTabContent>
+            <app-statistic-for-match [match]="match"
+                                      [matchDetails]="matchDetails" >
+            </app-statistic-for-match>
+        </ng-template>
+      </mat-tab>
+    </mat-tab-group>
+</ng-container>

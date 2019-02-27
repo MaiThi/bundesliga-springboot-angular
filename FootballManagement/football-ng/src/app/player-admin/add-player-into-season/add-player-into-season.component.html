@@ -1,0 +1,48 @@
+<mat-toolbar>
+  <span>{{playerSeasonService.formPlayerSeason.controls['id'].value?"Modify Player In Team":"New Player Into Team"}}</span>
+  <span class="fill-remaining-space"></span>
+  <button class="btn-dialog-close" mat-stroked-button (click)="onClose()" tabIndex="-1"><mat-icon>clear</mat-icon></button>
+</mat-toolbar>
+<form class="normal-form"  [formGroup]="playerSeasonService.formPlayerSeason" (submit)="onSubmit()" >
+  <mat-grid-list cols="2" rowHeight="300px">
+    <mat-grid-tile>
+      <div class="controles-container">
+        <input type="hidden"  formControlName="id">
+        <input formControlName="teamTourId" type="hidden">
+        <input formControlName="teamName" type="hidden">
+        <input formControlName="tournamentName" type="hidden">
+        <input formControlName="playerName" type="hidden">
+        <input formControlName="totalRedCards" type="hidden">
+        <input formControlName="totalYellowCards" type="hidden">
+        <input formControlName="totalGoals" type="hidden">
+        <input formControlName="totalMatchesJoined" type="hidden">
+        <input formGroupName="dob" type="hidden">
+        <mat-form-field>
+          <mat-select formControlName="playerId" (selectionChange)="getPlayerInfor($event.value)" placeholder="Player">
+            <mat-option>None</mat-option>
+            <ng-container *ngFor="let pl of players">
+              <mat-option [value]="pl.id">{{pl.firstName}}-{{pl.lastName}}</mat-option>
+            </ng-container>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field>
+          <input formControlName="nationality" readonly matInput placeholder="Nationality">
+        </mat-form-field>
+
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="controles-container">
+
+        <mat-form-field>
+          <input formControlName="nbClothes" type="number" matInput placeholder="Clothes No">
+        </mat-form-field>
+
+        <div class="button-row">
+          <button mat-raised-button color="accent" type="submit">Submit</button>
+          <button mat-raised-button color="warn" (click)="onClear()">Clear</button>
+        </div>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</form>
