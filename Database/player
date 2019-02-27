@@ -1,0 +1,530 @@
+1,1993-12-19 00:00:00,Bittencourt,170,Leonardo,Deutschland,,65.5
+2,1995-02-12 00:00:00,Finne,180, Bard,Norwegen,,50.2
+3,1994-03-13 00:00:00,Gerhardt,190,Yannick,Deutschland,,80.3
+4,1990-05-27 00:00:00,Hector,170, Jonas,Deutschland,,90.1
+5,1993-08-15 00:00:00,Heintz,190,Dominique,Deutschland,,80
+6,1993-12-05 00:00:00,Horn,180,Timo,Deutschland,,83
+7,1989-05-15 00:00:00,Hosiner,165, Philipp,Österreich,,74
+8,1992-03-19 00:00:00,Jojic,165, Milos,Serbien,,75
+9,1986-01-20 00:00:00,Kessler,165,Thomas,Deutschland,,87
+10,1983-05-28 00:00:00,Lehmann,165,Matthias,Deutschland,,96
+11,1987-04-03 00:00:00,Maroh,190, Dominic,Slowenien,,87
+12,1986-09-06 00:00:00,Mavraj,190,Mergim,Albanien,,78
+13,1995-07-24 00:00:00,Mesenhöler,190,Daniel,Deutschland,,79
+14,1988-04-14 00:00:00,Modeste,190,Anthony,Frankreich,,80
+15,1991-12-16 00:00:00,Nagasawa,190,Kazuki,Japan,,65
+16,1990-02-13 00:00:00,Olkowski,190,Pawel,Polen,,52
+17,1990-05-18 00:00:00,Osako,190,Yuya,Japan,,76
+18,1989-12-17 00:00:00,Risse,180, Marcel,Deutschland,,76
+19,1985-01-08 00:00:00,Svento,185,Dusan,Slowakei,,67
+20,1992-04-14 00:00:00,Sörensen,180.4,Frederik,Dänemark,,78
+21,1991-09-23 00:00:00,Vogt,180,Kevin,Deutschland,,78
+22,1991-06-26 00:00:00,Zoller,180,Simon,Deutschland,,87
+131,1989-06-18 00:00:00,Aubameyang ,170,Pierre-Emerick,Gabun,,76
+132,1989-04-27 00:00:00,Bender ,173,Sven,Deutschland,,78
+133,1994-01-22 00:00:00,Bonmann,176, Hendrik,Deutschland,,80
+134,1990-11-14 00:00:00,Bürki ,179,Roman,Schweiz,,82
+135,1987-11-06 00:00:00,Castro ,182,Gonzalo,Deutschland,,84
+136,1992-12-05 00:00:00,Durm ,185,Erik,Deutschland,,86
+137,1994-01-19 00:00:00,Ginter ,188,Matthias,Deutschland,,88
+138,1988-07-19 00:00:00,Großkreutz ,191,Kevin,Deutschland,,90
+139,1990-10-24 00:00:00,Gündogan ,194,Ilkay,Deutschland,,92
+140,1992-07-14 00:00:00,Hofmann ,191,Jonas,Deutschland,,94
+141,1988-12-16 00:00:00,Hummels ,188,Mats,Deutschland,,96
+142,1995-05-02 00:00:00,Januzaj ,185,Adnan,Belgien,,98
+143,1989-03-17 00:00:00,Kagawa ,182,Shinji,Japan,,100
+144,1992-08-12 00:00:00,Leitner ,179,Moritz,Deutschland,,102
+145,1989-01-21 00:00:00,Mkhitaryan ,176,Henrikh,Armenien,,104
+146,1987-01-16 00:00:00,Park ,173,Joo-Ho,Südkorea,,106
+147,1985-03-06 00:00:00,Piszczek ,170,Lukasz,Polen,,108
+148,1986-01-22 00:00:00,Ramos ,172,Adrian,Kolumbien,,110
+149,1989-05-31 00:00:00,Reus ,174,Marco,Deutschland,,112
+150,1988-05-09 00:00:00,Sahin ,176,Nuri,Türkei,,114
+151,1988-01-22 00:00:00,Schmelzer ,178,Marcel,Deutschland,,116
+152,1988-09-06 00:00:00,Sokratis,180,,Griechenland,,118
+23,1988-06-28 00:00:00,Balogun,170, Leon,Nigeria,,76
+24,1988-02-01 00:00:00,Baumgartlinger,173,Julian,Österreich,,78
+25,1990-06-09 00:00:00,Beister,176,Maximilian,Deutschland,,80
+26,1991-08-24 00:00:00,Bell,179,Stefan,Deutschland,,82
+27,1988-12-04 00:00:00,Bengtsson,182,Pierre,Schweden,,84
+28,1988-07-17 00:00:00,Brosinski,185,Daniel,Deutschland,,86
+29,1986-10-24 00:00:00,Bungert,188,Niko,Deutschland,,88
+30,1991-02-02 00:00:00,Bussmann,191, Gaetan,Frankreich,,90
+31,1991-04-08 00:00:00,Clemens,194,Christian,Deutschland,,92
+32,1993-11-05 00:00:00,Cordoba,191, Jhon,Kolumbien,,94
+33,1985-12-07 00:00:00,Curci,188,Gianluca,Italien,,96
+34,1988-04-02 00:00:00,De Blasis,185, Pablo,Argentinien,,98
+35,1989-08-01 00:00:00,Frei,182,Fabian,Schweiz,,100
+36,1994-04-15 00:00:00,Huth,179,Jannik,Deutschland,,102
+37,1993-11-07 00:00:00,Jairo,176,Gonzalo,Spanien,,104
+38,1985-08-29 00:00:00,Jara ,173,Gonzalo,Chile,,106
+39,1993-06-22 00:00:00,Karius,170,Loris,Deutschland,,108
+40,1989-07-12 00:00:00,Latza,172, Danny,Deutschland,,110
+41,1992-02-24 00:00:00,Malli,174,Yunus,Deutschland,,112
+42,1990-01-27 00:00:00,Moritz,176,Christoph,Deutschland,,114
+43,1992-07-15 00:00:00,Mutz,178, Yoshinori,Japan,,116
+44,1993-07-02 00:00:00,Nedelev,180,Todor,Bulgarien,,118
+45,1990-10-24 00:00:00,Niederlechner,182, Florian,Deutschland,,120
+46,1996-03-16 00:00:00,Parker,184,Devante,Deutschland,,122
+47,1997-11-04 00:00:00,Serdar,186,Suat,Deutschland,,124
+48,1985-05-18 00:00:00,Sereno,188,Henrique,Portugal,,126
+49,1980-04-08 00:00:00,Soto,190, Elkin,Kolumbien,,128
+50,1985-04-19 00:00:00,Zimling,192,Niki,Dänemark,,130
+153,1988-10-12 00:00:00,Subotic ,182,Neven,Serbien,,120
+154,1980-06-08 00:00:00,Weidenfeller ,184,Roman,Deutschland,,122
+155,1995-08-09 00:00:00,Weigl ,186,Julian,Deutschland,,124
+165,1995-09-10 00:00:00,Gerezgiher ,191,Joel,Deutschland,,94
+166,1984-01-18 00:00:00,Hasebe ,188,Makoto,Japan,,96
+167,1989-11-24 00:00:00,Hradecky ,185,Lukas,Finnland,,98
+168,1991-01-27 00:00:00,Ignjovski ,182,Aleksandar,Serbien,,100
+169,1992-05-20 00:00:00,Kadlec ,179,Vaclav,Tschechien,,102
+170,1995-12-12 00:00:00,Kinsombi ,176,David,Deutschland,,104
+171,1993-06-01 00:00:00,Kittel ,173,Sonny,Deutschland,,106
+172,1990-07-17 00:00:00,Lindner ,170,Heinz,Österreich,,108
+173,1990-11-20 00:00:00,Medojevic ,172,Slobodan,Serbien,,110
+174,1983-01-17 00:00:00,Meier ,174,Alexander,Deutschland,,112
+175,1989-12-01 00:00:00,Oczipka ,176,Bastian,Deutschland,,114
+176,1989-01-01 00:00:00,Reinartz ,178,Stefan,Deutschland,,116
+156,1986-07-15 00:00:00,Abraham ,170,David,Argentinien,,76
+157,1987-08-20 00:00:00,Aigner ,173,Stefan,Deutschland,,78
+158,1988-10-01 00:00:00,Anderson,176,,Brasilien,,80
+51,1989-04-17 00:00:00,Aranguiz,170,Charles,Chile,,76
+52,1990-08-04 00:00:00,Bellarab,173, Karim,Deutschland,,78
+53,1989-04-27 00:00:00,Bender,176,Lars,Deutschland,,80
+54,1997-04-18 00:00:00,Boeder,179, Lukas,Deutschland,,82
+55,1987-01-02 00:00:00,Boenisch,182, Sebastian,Polen,,84
+56,1996-02-05 00:00:00,Brandt,185,Julian,Deutschland,,86
+57,1994-08-02 00:00:00,Calhanoglu,188,Hakan,Türkei,,88
+58,1990-05-02 00:00:00,Donati,191,Hakan,Italien,,90
+59,1996-03-24 00:00:00,Frey,194,Marlon,Deutschland,,92
+60,1988-01-06 00:00:00,Hernande,191, Javier,Mexiko,,94
+61,1984-10-16 00:00:00,Hilbert,188,Roberto,Deutschland,,96
+62,1995-11-28 00:00:00,Jedvaj,185,Tin,Kroatien,,98
+63,1990-09-10 00:00:00,Kampl,182,Kevin,Slowenien,,100
+64,1984-01-25 00:00:00,Kießling,179, Stefan,Deutschland,,102
+65,1991-02-19 00:00:00,Kramer,176,Christoph,Deutschland,,104
+66,1984-11-01 00:00:00,Kresic,173,Dario,Kroatien,,106
+67,1992-04-03 00:00:00,Leno,170,Bernd,Deutschland,,108
+68,1991-03-16 00:00:00,Mehmi,172,Admir,Schweiz,,110
+69,1992-02-23 00:00:00,Papadopoulos,174,Kyriakos,Griechenland,,112
+70,1992-02-16 00:00:00,Ramalho,176,André,Brasilien,,114
+71,1993-12-17 00:00:00,Ryu,178, Seung-Woo,Südkorea,,116
+72,1996-11-02 00:00:00,Tah,180,Jonathan,Deutschland,,118
+73,1989-07-21 00:00:00,Toprak,182, Ömer,Türkei,,120
+75,1981-01-10 00:00:00,Yelldell,186,David,USA,,124
+76,1994-01-22 00:00:00,Yurchenko,188,Vladlen,Ukraine,,126
+77,1992-06-24 00:00:00,Alaba,170, David,Österreich,,76
+78,1989-03-13 00:00:00,Badstuber,173, Holger,Deutschland,,78
+79,1987-04-17 00:00:00,Benatia,176,Medhi,Marokko,,80
+80,1988-03-09 00:00:00,Boateng,179,Jerome,Deutschland,,82
+81,1996-06-13 00:00:00,Coman,182,Kingsley,Frankreich,,84
+82,1990-09-14 00:00:00,Douglas ,185,Costa,Brasilien,,86
+83,1996-11-11 00:00:00,Gaudino,188,Gianluca,Deutschland,,88
+84,1995-06-06 00:00:00,Green,191,Julian,USA,,90
+85,1992-03-06 00:00:00,Götze,194,Mario,Deutschland,,92
+86,1988-02-09 00:00:00,Javi ,191,Martinez,Spanien,,94
+87,1993-01-03 00:00:00,Juan ,188,Bernat,Spanien,,96
+88,1995-08-02 00:00:00,Kimmich,185, Joshua,Deutschland,,98
+89,1990-01-10 00:00:00,Kirchhoff,182,Jan,Deutschland,,100
+90,1996-07-23 00:00:00,Kurt,179, Sinan,Deutschland,,102
+91,1983-11-11 00:00:00,Lahm,176,Philipp,Deutschland,,104
+92,1988-08-21 00:00:00,Lewandowski,173, Robert,Polen,,106
+93,1989-09-13 00:00:00,Müller,170,Thomas,Deutschland,,108
+94,1986-03-27 00:00:00,Neuer,172, Manuel,Deutschland,,110
+95,1985-07-09 00:00:00,Rafinha,174, Manuel,Brasilien,,112
+96,1983-07-04 00:00:00,Ribery,176,Franck,Frankreich,,114
+97,1984-01-23 00:00:00,Robben,178, Arjen,Niederlande,,116
+98,1990-11-10 00:00:00,Rode,180,Sebastian,Deutschland,,118
+99,1981-03-18 00:00:00,Starke,182,Tom,Deutschland,,120
+101,1988-03-08 00:00:00,Ulreich,186, Sven,Deutschland,,124
+102,1987-05-22 00:00:00,Vidal,188,Arturo,Chile,,126
+103,1994-03-03 00:00:00,Weihrauch,190,Patrick,Deutschland,,128
+104,1981-11-25 00:00:00,Xabi,192, Alonso,Spanien,,130
+105,1989-05-16 00:00:00,Alvaro ,170,Dominguez,Spanien,,76
+106,1981-11-28 00:00:00,Brouwers ,173,Roel,Niederlande,,78
+107,1996-10-04 00:00:00,Christensen ,176,Andreas,Dänemark,,80
+108,1996-01-01 00:00:00,Dahoud ,179,Mahmoud,Deutschland,,82
+109,1992-08-08 00:00:00,Drmic ,182,Josip,Schweiz,,84
+110,1996-09-30 00:00:00,Elvedi ,185,Nico,Schweiz,,86
+111,1990-08-13 00:00:00,Hahn ,188,André,Deutschland,,88
+112,1993-03-29 00:00:00,Hazard ,191,Thorgan,Belgien,,90
+113,1981-01-08 00:00:00,Heimeroth ,194,Christofer,Deutschland,,92
+114,1991-12-02 00:00:00,Herrmann,191, Patrick,Deutschland,,94
+115,1993-12-01 00:00:00,Hrgota ,188,Branimir,Schweden,,96
+116,1990-07-04 00:00:00,Jantschke ,185,Tony,Deutschland,,98
+117,1987-11-12 00:00:00,Johnson,182, Fabian,USA,,100
+118,1992-03-21 00:00:00,Korb ,179,Julian,Deutschland,,102
+119,1990-06-21 00:00:00,Nordtveit ,176,Havard,Norwegen,,104
+121,1994-10-15 00:00:00,Ritter,170, Marlon,Deutschland,,108
+122,1995-01-15 00:00:00,Schulz ,172,Marvin,Deutschland,,110
+123,1993-01-04 00:00:00,Schulz ,174,Nico,Deutschland,,112
+124,1988-03-22 00:00:00,Sippel,176, Tobias,Deutschland,,114
+125,1988-12-17 00:00:00,Sommer ,178,Yann,Schweiz,,116
+126,1988-08-26 00:00:00,Stindl ,180,Lars,Deutschland,,118
+127,1980-06-16 00:00:00,Stranzl ,182,Martin,Österreich,,120
+128,1988-04-21 00:00:00,Traoré ,184,Ibrahima,Guinea,,122
+129,1985-10-24 00:00:00,Wendt ,186,Oscar,Schweden,,124
+130,1992-09-27 00:00:00,Xhaka ,188,Granit,Schweiz,,126
+159,1994-04-17 00:00:00,Balayev ,179,Emil,Aserbaidschan,,82
+160,1992-09-27 00:00:00,Castaignos ,182,Luc,Niederlande,,84
+161,1990-03-29 00:00:00,Chandler ,185,Timothy,USA,,86
+162,1986-10-17 00:00:00,Djakpa ,188,Constant,Elfenbeinküste,,88
+163,1987-12-14 00:00:00,Flum ,191,Johannes,Deutschland,,90
+164,1995-08-02 00:00:00,Gacinovic ,194,Mijat,Serbien,,92
+177,1985-04-08 00:00:00,Russ ,180,Marco,Deutschland,,118
+178,1992-02-22 00:00:00,Seferovic ,182,Haris,Schweiz,,120
+179,1995-10-12 00:00:00,Stendera ,184,Marc,Deutschland,,122
+180,1996-05-19 00:00:00,Waldschmidt ,186,Luca,Deutschland,,124
+181,1989-10-07 00:00:00,Zambrano ,188,Carlos,Peru,,126
+182,1996-03-26 00:00:00,Zummack ,190,Yannick,Deutschland,,128
+183,1982-08-12 00:00:00,Altintop ,170,Halil,Türkei,,76
+184,1984-05-18 00:00:00,Baier ,173,Daniel,Deutschland,,78
+185,1987-06-18 00:00:00,Bobadilla ,176,Raul,Paraguay,,80
+187,1984-09-23 00:00:00,Callsen-Bracker ,182,Jan-Ingwer,Deutschland,,84
+188,1995-09-14 00:00:00,Ekin ,185,Arif,Türkei,,86
+189,1990-03-25 00:00:00,Esswein ,188,Alexander,Deutschland,,88
+190,1982-12-02 00:00:00,Feulner ,191,Markus,Deutschland,,90
+191,1995-06-09 00:00:00,Framberger ,194,Raphael,Deutschland,,92
+192,1992-04-24 00:00:00,Gelios ,191,Ioannis,Griechenland,,94
+193,1987-09-18 00:00:00,Hitz ,188,Marwin,Schweiz,,96
+194,1989-12-08 00:00:00,Hong,185, Jeong-Ho,Südkorea,,98
+195,1985-02-14 00:00:00,Janker ,182,Christoph,Deutschland,,100
+196,1991-05-28 00:00:00,Ji ,179,Dong-Won,Südkorea,,102
+197,1985-10-30 00:00:00,Klavan ,176,Ragnar,Estland,,104
+198,1994-01-31 00:00:00,Kohr ,173,Dominik,Deutschland,,106
+199,1989-02-27 00:00:00,Koo,170, Ja-Cheol,Südkorea,,108
+200,1996-09-23 00:00:00,Kurz ,172,Bastian,Deutschland,,110
+201,1977-04-06 00:00:00,Manninger ,174,Alexander,Österreich,,112
+202,1989-01-13 00:00:00,Matavz ,176,Tim,Slowenien,,114
+203,1993-09-30 00:00:00,Max ,178,Philipp,Deutschland,,116
+204,1989-01-11 00:00:00,Moravek ,180,Jan,Tschechien,,118
+205,1985-03-20 00:00:00,Mölders ,182,Sascha,Deutschland,,120
+206,1996-11-19 00:00:00,Oettl ,184,Yannik,Deutschland,,122
+207,1990-10-18 00:00:00,Opare ,186,Daniel,Ghana,,124
+208,1993-07-03 00:00:00,Parker ,188,Shawn,Deutschland,,126
+209,1995-03-22 00:00:00,Reinthaler ,190,Max,Italien,,128
+210,1993-03-09 00:00:00,Rieder ,187,Tim,Deutschland,,130
+211,1995-10-10 00:00:00,Schuster ,184,Marco,Deutschland,,132
+212,1993-02-12 00:00:00,Stafylidis ,181,Konstantinos,Griechenland,,134
+213,1984-03-22 00:00:00,Trochowski ,178,Piotr,Deutschland,,136
+214,1994-05-23 00:00:00,Uhde ,175,Maik,Deutschland,,138
+215,1983-01-09 00:00:00,Verhaegh ,172,Paul,Niederlande,,140
+216,1985-07-19 00:00:00,Werner ,174,Tobias,Deutschland,,142
+217,1990-11-30 00:00:00,Albornoz ,170,Miiko,Chile,,76
+218,1983-04-23 00:00:00,Andreasen ,173,Leon,Dänemark,,78
+219,1996-07-20 00:00:00,Anton ,176,Waldemar,Deutschland,,80
+220,1993-01-13 00:00:00,Bech ,179,Uffe,Dänemark,,82
+221,1989-08-21 00:00:00,Benschop ,182,Charlison,Niederlande,,84
+222,1995-10-08 00:00:00,Bähre ,185,Mike-Steven,Deutschland,,86
+223,1996-01-15 00:00:00,Dierßen ,188,Tim,Deutschland,,88
+224,1987-02-25 00:00:00,Erdinc ,191,Mevlüt,Türkei,,90
+225,1995-04-03 00:00:00,Ernst ,194,Sebastian,Deutschland,,92
+227,1987-12-25 00:00:00,Gülselam ,188,Ceyhun,Türkei,,96
+228,1993-05-30 00:00:00,Hirsch ,185,Maurice,Deutschland,,98
+229,1993-02-28 00:00:00,Hoffmann ,182,Andre,Deutschland,,100
+230,1994-05-03 00:00:00,Karaman ,179,Kenan,Türkei,,102
+231,1989-12-11 00:00:00,Kiyotake ,176,Hiroshi,Japan,,104
+232,1992-09-13 00:00:00,Klaus ,173,Felix,Deutschland,,106
+233,1997-05-04 00:00:00,Königsmann ,170,Timo,Deutschland,,108
+235,1989-12-15 00:00:00,Prib ,174,Edgar,Deutschland,,112
+236,1992-07-11 00:00:00,Radlinger ,176,Samuel,Österreich,,114
+237,1993-06-27 00:00:00,Rankovic ,178,Vladimir,Deutschland,,116
+238,1997-12-03 00:00:00,Saint-Maximin ,180,Allan,Frankreich,,118
+239,1990-12-04 00:00:00,Sakai ,182,Hiroki,Japan,,120
+240,1990-08-25 00:00:00,Sané ,184,Salif,Senegal,,122
+241,1988-05-12 00:00:00,Schmiedebach ,186,Manuel,Deutschland,,124
+242,1983-01-04 00:00:00,Schulz ,188,Christian,Deutschland,,126
+243,1990-12-06 00:00:00,Sobiech ,190,Artur,Polen,,128
+244,1990-05-29 00:00:00,Sorg ,187,Oliver,Deutschland,,130
+245,1996-01-02 00:00:00,Sulejmani ,184,Valmir,Albanien,,132
+246,1996-07-02 00:00:00,Teichgräber ,181,Niklas,Deutschland,,134
+247,1985-03-11 00:00:00,Tschauner ,178,Philipp,Deutschland,,136
+248,1989-12-02 00:00:00,Zieler ,175,Ron-Robert,Deutschland,,138
+226,1987-05-15 00:00:00,Felipe,191,Fle,Brasilien,,94
+234,1987-05-20 00:00:00,Marcelo,172,Lona,Brasilien,,110
+249,1986-05-28 00:00:00,Allagui ,170,Sami,Tunesien,,76
+250,1987-01-23 00:00:00,Baumjohann ,173,Alexander,Deutschland,,78
+251,1987-12-22 00:00:00,Beerens ,176,Roy,Niederlande,,80
+253,1993-01-28 00:00:00,Brooks ,182,John Anthony,USA,,84
+254,1992-03-23 00:00:00,Cigerci ,185,Tolga,Deutschland,,86
+255,1990-08-08 00:00:00,Darida ,188,Vladimir,Tschechien,,88
+256,1995-06-20 00:00:00,Gersbeck ,191,Marius,Deutschland,,90
+257,1991-09-05 00:00:00,Haraguchi ,194,Genki,Japan,,92
+258,1988-01-22 00:00:00,Hegeler ,191,Jens,Deutschland,,94
+259,1984-06-08 00:00:00,Ibisevic ,188,Vedad,Bosnien-Herzegowina,,96
+260,1984-09-29 00:00:00,Jarstein ,185,Rune,Norwegen,,98
+261,1985-05-08 00:00:00,Kalou ,182,Salomon,ElfenbeinkÃ¼ste,,100
+262,1995-03-04 00:00:00,Kohls ,179,Florian,Deutschland,,102
+263,1988-07-22 00:00:00,Kraft ,176,Thomas,Deutschland,,104
+264,1996-11-13 00:00:00,KÃ¶rber ,173,Nils-Jonathan,Deutschland,,106
+265,1988-01-15 00:00:00,Langkamp ,170,Sebastian,Deutschland,,108
+266,1988-02-05 00:00:00,Lustenberger ,172,Fabian,Schweiz,,110
+267,1997-03-18 00:00:00,MittelstÃ¤dt ,174,Maximilian,Deutschland,,112
+268,1986-10-30 00:00:00,Pekarik ,176,Peter,Slowakei,,114
+269,1992-01-26 00:00:00,Plattenhardt ,178,Marvin,Deutschland,,116
+271,1989-02-13 00:00:00,Schieber ,182,Julian,Deutschland,,120
+272,1987-06-16 00:00:00,Skjelbred ,184,Per Ciljan,Norwegen,,122
+273,1995-04-14 00:00:00,Stark ,186,Niklas,Deutschland,,124
+274,1989-12-04 00:00:00,Stocker ,188,Valentin,Schweiz,,126
+275,1994-04-21 00:00:00,Weiser ,190,Mitchell,Deutschland,,128
+276,1986-11-21 00:00:00,van den Bergh ,187,Johannes,Deutschland,,130
+277,1996-10-27 00:00:00,Amiri ,170,Nadiem,Deutschland,,76
+278,1990-02-06 00:00:00,Baumann ,173,Oliver,Deutschland,,78
+279,1990-01-24 00:00:00,Bicakcic ,176,Ermin,Bosnien-Herzegowina,,80
+280,1988-02-23 00:00:00,Elyounoussi ,179,Tarik,Norwegen,,82
+281,1997-02-19 00:00:00,Gimber ,182,Benedikt,Deutschland,,84
+282,1988-09-22 00:00:00,Grahl ,185,Jens,Deutschland,,86
+283,1990-06-11 00:00:00,Hamad ,188,Jiloan,Schweden,,88
+284,1984-06-27 00:00:00,Herdling ,191,Kai,Deutschland,,90
+286,1992-04-25 00:00:00,Kaderabek ,191,Pavel,Tschechien,,94
+287,1992-06-13 00:00:00,Kim ,188,Jin-Su,Südkorea,,96
+288,1982-02-03 00:00:00,Kuranyi ,185,Kevin,Deutschland,,98
+289,1992-11-18 00:00:00,Malbasic ,182,Filip,Serbien,,100
+290,1997-04-17 00:00:00,Ochs ,179,Philipp,Deutschland,,102
+291,1986-03-17 00:00:00,Polanski ,176,Eugen,Polen,,104
+292,1996-12-13 00:00:00,Rapp ,173,Nicolai,Deutschland,,106
+293,1990-02-28 00:00:00,Rudy ,170,Sebastian,Deutschland,,108
+294,1990-06-22 00:00:00,Schmid ,172,Jonathan,Frankreich,,110
+295,1987-09-03 00:00:00,Schwegler ,174,Pirmin,Schweiz,,112
+296,1991-12-20 00:00:00,Schär ,176,Fabian,Schweiz,,114
+297,1983-10-13 00:00:00,Stolz ,178,Alexander,Deutschland,,116
+298,1990-12-05 00:00:00,Strobl ,180,Tobias,Deutschland,,118
+299,1987-09-12 00:00:00,Szalai ,182,Adam,Ungarn,,120
+300,1995-03-09 00:00:00,Süle ,184,Niklas,Deutschland,,122
+301,1994-08-08 00:00:00,Toljan ,186,Jeremy,Deutschland,,124
+302,1991-08-24 00:00:00,Uth ,188,Mark,Deutschland,,126
+303,1989-11-20 00:00:00,Vargas ,190,Eduardo,Chile,,128
+304,1992-07-30 00:00:00,Volland ,187,Kevin,Deutschland,,130
+305,1991-08-17 00:00:00,Zuber ,184,Steven,Schweiz,,132
+306,1996-04-03 00:00:00,Baumgartl ,170,Timo,Deutschland,,76
+307,1996-04-03 00:00:00,Didavi ,173,Daniel,Deutschland,,78
+308,1996-04-03 00:00:00,Ferati ,176,Arianit,Deutschland,,80
+309,1996-04-03 00:00:00,Gentner ,179,Christian,Deutschland,,82
+310,1996-04-03 00:00:00,Ginczek ,182,Daniel,Deutschland,,84
+311,1996-04-03 00:00:00,Gruezo ,185,Carlos,Ecuador,,86
+312,1996-04-03 00:00:00,Harnik ,188,Martin,Österreich,,88
+313,1996-04-03 00:00:00,Heise ,191,Philip,Deutschland,,90
+314,1996-04-03 00:00:00,Hlousek ,194,Adam,Tschechien,,92
+315,1996-04-03 00:00:00,Insua ,191,Emiliano,Argentinien,,94
+316,1996-04-03 00:00:00,Kiesewetter ,188,Jerome,USA,,96
+317,1996-04-03 00:00:00,Klein ,185,Florian,Österreich,,98
+318,1996-04-03 00:00:00,Kliment ,182,Jan,Tschechien,,100
+319,1996-04-03 00:00:00,Kostic ,179,Filip,Serbien,,102
+320,1996-04-03 00:00:00,Kruse ,176,Robbie,Australien,,104
+321,1996-04-03 00:00:00,Langerak ,173,Mitchell,Australien,,106
+285,1996-08-14 00:00:00,Joelinton,194,Jord,Brasilien,,92
+252,1988-07-18 02:00:00,Ben-Hatira ,179,Anis,Tunesien,,82
+322,1996-04-03 00:00:00,Maxim ,170,Alexandru,Rumänien,,108
+323,1996-04-03 00:00:00,Niedermeier ,172,Georg,Deutschland,,110
+324,1996-04-03 00:00:00,Ristl ,174,Mart,Deutschland,,112
+325,1996-04-03 00:00:00,Rupp ,176,Lukas,Deutschland,,114
+326,1996-04-03 00:00:00,Schwaab ,178,Daniel,Deutschland,,116
+327,1996-04-03 00:00:00,Serey ,180,Dié,Elfenbeinküste,,118
+328,1996-04-03 00:00:00,Sunjic ,182,Toni,Bosnien-Herzegowina,,120
+329,1996-04-03 00:00:00,Tyton ,184,Przemyslaw,Polen,,122
+330,1996-04-03 00:00:00,Vlachodimos ,186,Odisseas,Deutschland,,124
+331,1996-04-03 00:00:00,Wanitzek ,188,Marvin,Deutschland,,126
+332,1996-04-03 00:00:00,Werner ,190,Timo,Deutschland,,128
+333,1994-12-02 00:00:00,Aycicek ,170,Levent,Deutschland,,76
+334,1989-03-03 00:00:00,Bargfrede ,173,Philipp,Deutschland,,78
+335,1987-07-02 00:00:00,Bartels ,176,Fin,Deutschland,,80
+336,1994-08-12 00:00:00,Busch ,179,Marnon,Deutschland,,82
+337,1996-08-12 00:00:00,Eggestein ,182,Maximilian,Deutschland,,84
+338,1980-07-12 00:00:00,Fritz ,185,Clemens,Deutschland,,86
+339,1995-01-23 00:00:00,Fröde ,188,Lukas,Deutschland,,88
+340,1989-06-06 00:00:00,Galvez ,191,Alejandro,Spanien,,90
+341,1988-08-07 00:00:00,Garcia ,194,Santiago,Argentinien,,92
+342,1996-11-01 00:00:00,Garcia ,191,Ulisses,Schweiz,,94
+343,1986-12-24 00:00:00,Gebre Selassie ,188,Theodor,Tschechien,,96
+344,1995-07-08 00:00:00,Grillitsch ,185,Florian,Österreich,,98
+345,1996-05-02 00:00:00,Husic ,182,Raif,Deutschland,,100
+346,1993-02-17 00:00:00,Hüsing ,179,Oliver,Deutschland,,102
+347,1990-10-11 00:00:00,Johannsson ,176,Aron,USA,,104
+348,1987-09-26 00:00:00,Junuzovic ,173,Zlatko,Österreich,,106
+349,1991-12-03 00:00:00,Kroos ,170,Felix,Deutschland,,108
+350,1994-11-26 00:00:00,Lorenzen ,172,Melvyn,Deutschland,,110
+351,1986-01-25 00:00:00,Lukimya ,174,Assani,DR Kongo,,112
+352,1990-09-06 00:00:00,Pavlovic ,176,Mateo,Kroatien,,114
+353,1992-10-19 00:00:00,Sternberg ,178,Janek,Deutschland,,116
+354,1990-10-14 00:00:00,Ujah ,180,Anthony,Nigeria,,118
+355,1992-03-08 00:00:00,Vestergaard ,182,Jannik,Dänemark,,120
+356,1990-03-15 00:00:00,Wiedwald ,184,Felix,Deutschland,,122
+357,1988-06-06 00:00:00,Wolf ,186,Raphael,Deutschland,,124
+358,1993-10-04 00:00:00,Yildirim ,188,Özkan,Deutschland,,126
+359,1995-09-08 00:00:00,Zander ,190,LucaMilan,Deutschland,,128
+360,1995-12-07 00:00:00,Zetterer ,187,Michael,Deutschland,,130
+361,1994-02-14 00:00:00,von Haacke ,184,Julian,Deutschland,,132
+362,1996-03-15 00:00:00,Öztunali ,181,Levin,Deutschland,,134
+363,1994-05-27 00:00:00,Arnold ,170,Maximilian,Deutschland,,76
+364,1992-06-06 00:00:00,Ascues ,173,Carlos,Peru,,78
+365,1998-06-01 00:00:00,Azzaoui ,176,Ismail,Belgien,,80
+366,1983-08-09 00:00:00,Benaglio ,179,Diego,Schweiz,,82
+367,1988-01-16 00:00:00,Bendtner ,182,Nicklas,Dänemark,,84
+368,1988-01-15 00:00:00,Caligiuri ,185,Daniel,Italien,,86
+369,1992-06-25 00:00:00,Casteels ,188,Koen,Belgien,,88
+371,1989-05-31 00:00:00,Dost ,194,Bas,Niederlande,,92
+372,1993-09-20 00:00:00,Draxler ,191,Julian,Deutschland,,94
+374,1987-05-04 00:00:00,Grün ,185,Max,Deutschland,,98
+375,1990-09-19 00:00:00,Guilavogui ,182,Josuha,Frankreich,,100
+376,1990-06-22 00:00:00,Jung ,179,Sebastian,Deutschland,,102
+377,1988-09-05 00:00:00,Klose ,176,Timm,Schweiz,,104
+378,1992-05-22 00:00:00,Knoche ,173,Robin,Deutschland,,106
+379,1988-03-19 00:00:00,Kruse ,170,Max,Deutschland,,108
+382,1995-09-14 00:00:00,Rodriguez ,176,Francisco,Schweiz,,114
+383,1992-08-25 00:00:00,Rodriguez ,178,Ricardo,Schweiz,,116
+384,1984-07-06 00:00:00,Schäfer ,180,Marcel,Deutschland,,118
+385,1990-06-11 00:00:00,Schürrle ,182,André,Deutschland,,120
+386,1995-03-29 00:00:00,Seguin ,184,Paul,Deutschland,,122
+387,1995-02-22 00:00:00,Sprenger ,186,Moritz,Deutschland,,124
+388,1995-01-29 00:00:00,Stolze ,188,Sebastian,Deutschland,,126
+389,1987-01-09 00:00:00,Träsch ,190,Christian,Deutschland,,128
+391,1996-01-02 00:00:00,Zawada ,184,Oskar,Polen,,132
+74,1993-07-20 00:00:00,Wendell,184,Wendell,Brasilien,,122
+100,1991-11-04 00:00:00,Thiago,184,Tom,Spanien,,122
+120,1985-03-28 00:00:00,Raffael,173,Gern,Brasilien,,106
+186,1988-07-14 00:00:00,Caiuby,179,Bali,Brasilien,,82
+270,1986-11-05 00:00:00,Ronny,180,Olire,Brasilien,,118
+370,1983-10-18 00:00:00,Dante,191,Dante,Brasilien,,90
+373,1987-07-08 00:00:00,Felipe,188,Olp,Brasilien,,96
+380,1987-07-23 00:00:00,Luiz ,172,Gustavo,Brasilien,,110
+381,1982-10-09 00:00:00,Naldo,174,Dola,Brasilien,,112
+390,1986-01-24 00:00:00,Vieirinha,187,Ionr,Portugal,,130
+392,1987-01-14 00:00:00,Aogo ,170,Dennis,Deutschland,,76
+393,1994-10-11 00:00:00,Ayhan ,173,Kaan,Türkei,,78
+394,1987-06-03 00:00:00,Boateng,176, Kevin-Prince,Ghana,,80
+395,1989-03-23 00:00:00,Choupo-Moting ,179,Eric Maxim,Kamerun,,82
+396,1986-03-17 00:00:00,Felipe ,182,Santana,Brasilien,,84
+397,1995-12-13 00:00:00,Friedrich ,185,Marvin,Deutschland,,86
+398,1988-09-27 00:00:00,Fährmann ,188,Ralf,Deutschland,,88
+399,1993-08-17 00:00:00,Geis ,191,Johannes,Deutschland,,90
+400,1990-05-17 00:00:00,Giefer ,194,Fabian,Deutschland,,92
+401,1995-06-02 00:00:00,Goretzka ,191,Leon,Deutschland,,94
+402,1981-02-05 00:00:00,Gspurning ,188,Michael,Österreich,,96
+403,1983-12-08 00:00:00,Huntelaar ,185,Klaas Jan,Niederlande,,98
+404,1989-09-16 00:00:00,Höger ,182,Marco,Deutschland,,100
+405,1995-05-08 00:00:00,Höjbjerg ,179,Pierre-Emile,Dänemark,,102
+406,1988-02-29 00:00:00,Höwedes ,176,Benedikt,Deutschland,,104
+407,1989-04-27 00:00:00,Junior ,173,Caicara,Brasilien,,106
+408,1996-09-21 00:00:00,Kehrer ,170,Thilo,Deutschland,,108
+409,1993-06-20 00:00:00,Kolasinac ,172,Sead,Bosnien-Herzegowina,,110
+410,1991-08-08 00:00:00,Matip ,174,Joel,Kamerun,,112
+411,1995-09-18 00:00:00,Meyer ,176,Max,Deutschland,,114
+412,1993-03-28 00:00:00,Nastasic ,178,Matija,Serbien,,116
+413,1988-02-18 00:00:00,Neustädter ,180,Roman,Deutschland,,118
+414,1996-09-30 00:00:00,Nübel ,182,Alexander,Deutschland,,120
+415,1996-11-02 00:00:00,Platte ,184,Felix,Deutschland,,122
+416,1983-03-23 00:00:00,Riether ,186,Sascha,Deutschland,,124
+417,1988-01-31 00:00:00,Sam ,188,Sidney,Deutschland,,126
+418,1996-11-01 00:00:00,Sané ,190,Leroy,Deutschland,,128
+419,1988-03-27 00:00:00,Uchida ,187,Atsuto,Japan,,130
+420,1989-07-04 00:00:00,di Santo ,184,Franco,Argentinien,,132
+421,1994-05-27 00:00:00,Arnold ,170,Maximilian,Deutschland,,76
+422,1992-06-06 00:00:00,Ascues ,173,Carlos,Peru,,78
+423,1998-06-01 00:00:00,Azzaoui ,176,Ismail,Belgien,,80
+424,1983-08-09 00:00:00,Benaglio ,179,Diego,Schweiz,,82
+425,1988-01-16 00:00:00,Bendtner ,182,Nicklas,Dänemark,,84
+426,1988-01-15 00:00:00,Caligiuri ,185,Daniel,Italien,,86
+427,1992-06-25 00:00:00,Casteels ,188,Koen,Belgien,,88
+428,1983-10-18 00:00:00,Dante,191,Johannes,Brasilien,,90
+429,1989-05-31 00:00:00,Dost ,194,Bas,Niederlande,,92
+430,1993-09-20 00:00:00,Draxler ,191,Julian,Deutschland,,94
+431,1987-07-08 00:00:00,Felipe,188,Michael,Brasilien,,96
+432,1987-05-04 00:00:00,Grün ,185,Max,Deutschland,,98
+433,1990-09-19 00:00:00,Guilavogui ,182,Josuha,Frankreich,,100
+434,1990-06-22 00:00:00,Jung ,179,Sebastian,Deutschland,,102
+435,1988-09-05 00:00:00,Klose ,176,Timm,Schweiz,,104
+436,1992-05-22 00:00:00,Knoche ,173,Robin,Deutschland,,106
+437,1988-03-19 00:00:00,Kruse ,170,Max,Deutschland,,108
+438,1987-07-23 00:00:00,Luiz ,172,Gustavo,Brasilien,,110
+439,1982-10-09 00:00:00,Naldo,174,Joel,Brasilien,,112
+440,1995-09-14 00:00:00,Rodriguez ,176,Francisco,Schweiz,,114
+441,1992-08-25 00:00:00,Rodriguez ,178,Ricardo,Schweiz,,116
+442,1984-07-06 00:00:00,Schäfer ,180,Marcel,Deutschland,,118
+443,1990-06-11 00:00:00,Schürrle ,182,André,Deutschland,,120
+444,1995-03-29 00:00:00,Seguin ,184,Paul,Deutschland,,122
+445,1995-02-22 00:00:00,Sprenger ,186,Moritz,Deutschland,,124
+446,1995-01-29 00:00:00,Stolze ,188,Sebastian,Deutschland,,126
+447,1987-01-09 00:00:00,Träsch ,190,Christian,Deutschland,,128
+448,1986-01-24 00:00:00,Vieirinha,187,Atsuto,Portugal,,130
+449,1996-01-02 00:00:00,Zawada ,184,Oskar,Polen,,132
+450,1991-01-02 00:00:00,Caldirola ,170,Luca,Italien,,76
+451,1997-02-01 00:00:00,Finger ,173,Jan,Deutschland,,78
+452,1984-08-03 00:00:00,Garics ,176,György,Österreich,,80
+453,1988-06-26 00:00:00,Gondorf ,179,Jerome,Deutschland,,82
+454,1984-04-15 00:00:00,Gorka ,182,Benjamin,Deutschland,,84
+455,1986-12-02 00:00:00,Heller ,185,Marcel,Deutschland,,86
+456,1990-11-07 00:00:00,Holland ,188,Fabian,Deutschland,,88
+457,1983-11-26 00:00:00,Ivana ,191,Milan,Slowakei,,90
+458,1989-01-27 00:00:00,Jungwirth ,194,Florian,Deutschland,,92
+459,1983-12-09 00:00:00,Junior ,191,Diaz,Costa Rica,,94
+460,1997-06-30 00:00:00,Kazimi ,188,Ali,Deutschland,,96
+461,1989-06-27 00:00:00,Kempe ,185,Tobias,Deutschland,,98
+462,1992-03-31 00:00:00,Mathenia ,182,Christian,Deutschland,,100
+463,1983-11-22 00:00:00,Niemeyer ,179,Peter,Deutschland,,102
+464,1983-04-19 00:00:00,Platins ,176,Patrick,Deutschland,,104
+465,1990-03-15 00:00:00,Rausch ,173,Konstantin,Deutschland,,106
+466,1986-07-04 00:00:00,Rosenthal ,170,Jan,Deutschland,,108
+467,1985-11-16 00:00:00,Sailer ,172,Sead,Deutschland,,110
+468,1988-07-10 00:00:00,Sirigu ,174,Sandro,Deutschland,,112
+469,1990-10-28 00:00:00,Stark ,176,Yannick,Deutschland,,114
+470,1985-12-01 00:00:00,Stegmayer ,178,Michael,Deutschland,,116
+471,1985-11-27 00:00:00,Stroh-Engel ,180,Dominik,Deutschland,,118
+472,1985-11-12 00:00:00,Sulu ,182,Aytac,Türkei,,120
+473,1997-12-11 00:00:00,Volk ,184,Nick,Deutschland,,122
+474,1989-05-23 00:00:00,Vrancic ,186,Mario,Bosnien-Herzegowina,,124
+475,1987-11-29 00:00:00,Wagner ,188,Sandro,Deutschland,,126
+476,1997-03-15 00:00:00,Wembacher ,190,Noel,Deutschland,,128
+477,1985-01-15 00:00:00,Adler,170, René,Deutschland,,76
+478,1996-03-14 00:00:00,Altintas ,173,Batuhan,Türkei,,78
+479,1990-05-12 00:00:00,Cleber,176,György,Brasilien,,80
+480,1986-12-30 00:00:00,Diaz ,179,Marcelo,Chile,,82
+481,1989-10-20 00:00:00,Diekmeier ,182,Dennis,Deutschland,,84
+482,1987-01-18 00:00:00,Djourou ,185,Johan,Schweiz,,86
+483,1979-10-18 00:00:00,Drobny ,188,Jaroslav,Tschechien,,88
+484,1989-07-28 00:00:00,Ekdal Albin,191,Milan,Schweden,,90
+485,1994-04-18 00:00:00,Gregoritsch ,194,Michael,Österreich,,92
+486,1993-07-16 00:00:00,Götz Ashton-Phillip,191,Diaz,Deutschland,,94
+487,1993-03-25 00:00:00,Hirzel ,188,Andreas,Schweiz,,96
+488,1990-09-18 00:00:00,Holtby ,185,Lewis,Deutschland,,98
+489,1986-04-09 00:00:00,Hunt ,182,Aaron,Deutschland,,100
+490,1986-11-14 00:00:00,Ilicevic ,179,Ivo,Kroatien,,102
+491,1994-12-09 00:00:00,Jung ,176,Gideon,Deutschland,,104
+492,1987-01-26 00:00:00,Kacar ,173,Gojko,Serbien,,106
+493,1991-12-15 00:00:00,Lasogga ,170,Pierre-Michel,Deutschland,,108
+494,1993-01-10 00:00:00,Marcos ,172,Ronny,Mosambik,,110
+495,1987-09-25 00:00:00,Müller ,174,Nicolai,Deutschland,,112
+496,1995-03-03 00:00:00,Müller ,176,Philipp,Deutschland,,114
+497,1979-09-14 00:00:00,Olic ,178,Ivica,Kroatien,,116
+498,1990-05-06 00:00:00,Ostrzolek ,180,Matthias,Deutschland,,118
+499,1988-01-13 00:00:00,Rudnevs ,182,Artjoms,Lettland,,120
+500,1991-03-14 00:00:00,Sakai ,184,Gotoku,Japan,,122
+501,1988-08-11 00:00:00,Schipplock ,186,Sven,Deutschland,,124
+502,1980-08-18 00:00:00,Spahic ,188,Emir,Bosnien-Herzegowina,,126
+503,1988-10-16 00:00:00,Stieber ,190,Zoltan,Ungarn,,128
+504,1995-09-04 00:00:00,Bauer ,170,Robert,Deutschland,,76
+505,1986-09-08 00:00:00,Bregerie ,173,Romain,Frankreich,,78
+506,1996-09-25 00:00:00,Christiansen ,176,Max,Deutschland,,80
+507,1988-01-09 00:00:00,Cohen ,179,Almog,Israel,,82
+508,1991-10-29 00:00:00,Danilo,182,Dennis,Brasilien,,84
+509,1988-07-27 00:00:00,Engel ,185,Konstantin,Kasachstan,,86
+510,1991-06-15 00:00:00,Groß ,188,Pascal,Deutschland,,88
+511,1986-06-20 00:00:00,Hartmann ,191,Moritz,Deutschland,,90
+512,1991-03-28 00:00:00,Hinterseer ,194,Lukas,Österreich,,92
+513,1989-04-07 00:00:00,Hübner ,191,Benjamin,Deutschland,,94
+514,1992-04-22 00:00:00,Kachunga ,188,Elias,Deutschland,,96
+515,1991-04-02 00:00:00,Leckie ,185,Mathew,Australien,,98
+516,1986-11-22 00:00:00,Levels ,182,Tobias,Deutschland,,100
+517,1989-11-27 00:00:00,Lex ,179,Stefan,Deutschland,,102
+518,1985-09-25 00:00:00,Matip ,176,Marvin,Kamerun,,104
+519,1990-12-05 00:00:00,Morales ,173,Alfredo,USA,,106
+520,1996-12-15 00:00:00,Multhaup ,170,Maurice,Deutschland,,108
+521,1990-10-09 00:00:00,Nyland ,172,Örjan,Norwegen,,110
+522,1995-01-14 00:00:00,Ortag ,174,Christian,Deutschland,,112
+523,1989-05-26 00:00:00,Pekhart ,176,Tomas,Tschechien,,114
+524,1994-05-23 00:00:00,Pledl ,178,Thomas,Deutschland,,116
+525,1985-10-08 00:00:00,Roger,180,Matthias,Brasilien,,118
+526,1987-04-16 00:00:00,Suttner ,182,Markus,Österreich,,120
+527,1992-01-19 00:00:00,Wannenwetsch ,184,Stefan,Deutschland,,122
+528,1993-07-13 00:00:00,da Costa ,186,Danny,Deutschland,,124
+529,1984-06-28 00:00:00,Özcan ,188,Ramazan,Österreich,,126
+534,2019-02-28 00:00:00,test Player,190,player,Germany,user.png,89

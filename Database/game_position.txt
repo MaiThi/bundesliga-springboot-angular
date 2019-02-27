@@ -1,0 +1,12 @@
+1,Goalkeeper,GK
+2,Full-Back,FB
+3,Wing-Back,WB
+4,Central Midfield,CM
+5,Sweeper,SP
+6,Wide Midfield/Winger,WN
+7,Striker/Centre Forward,CF
+9,Behind The Striker,BS
+10,Assistant Coach,AC
+11,Coach,CO
+12,Initialize,IN
+8,Substitute,SUB
